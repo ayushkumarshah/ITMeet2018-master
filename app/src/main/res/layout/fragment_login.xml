@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:theme="@style/ThemeOverlay.AppCompat"
     android:background="#000000"
+    android:id="@+id/frag_login"
     tools:context="np.edu.ku.itmeet.FirebaseAuthentication.Login">
 
     <!-- Login progress -->

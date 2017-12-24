@@ -83,20 +83,20 @@
             </LinearLayout>
         </LinearLayout>
         83BECA<TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingEnd="5dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:paddingStart="5dp"
-            android:paddingTop="5dp"
-            android:text="Silver Sponsers"
-            android:background="#8DCED6"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:text="Silver Sponsers"
+        android:background="#8DCED6"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
             <LinearLayout
                 android:layout_width="175dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginBottom="2dp">
                 <ImageButton
                     android:id="@+id/neo"
@@ -177,7 +177,7 @@
             android:paddingRight="5dp"
             android:paddingStart="5dp"
             android:paddingTop="5dp"
-            android:text="Supporting Organization"
+            android:text="Supporting Organizations"
             android:background="#8DCED6"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
@@ -190,12 +190,12 @@
             android:layout_marginBottom="2dp"
             android:orientation="horizontal">
             <LinearLayout
-                android:layout_width="175dp"
+                android:layout_width="110dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="2dp">
                 <ImageButton
                     android:id="@+id/sunway"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
@@ -204,18 +204,34 @@
                     android:src="@drawable/sunway"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="110dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="2dp">
                 <ImageButton
                     android:id="@+id/doit"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
                     android:layout_marginBottom="2dp"
                     android:background="@null"
                     android:src="@drawable/doit" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="132dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp">
+
+                <ImageButton
+                    android:id="@+id/cynical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cynical" />
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -293,7 +309,7 @@
                 android:layout_width="175dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="2dp"
-                android:layout_marginStart="5dp">
+                android:layout_marginLeft="5dp">
                 <ImageButton
                     android:id="@+id/ittn"
                     android:layout_width="match_parent"

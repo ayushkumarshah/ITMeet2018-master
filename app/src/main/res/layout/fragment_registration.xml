@@ -1,3 +1,7 @@
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frag_registration">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -91,4 +95,9 @@
         android:layout_alignStart="@+id/btn_design_comp"
         android:layout_below="@+id/btn_design_comp"
         android:text="NepHack" />
+
+
+
+
 </RelativeLayout>
+</FrameLayout>

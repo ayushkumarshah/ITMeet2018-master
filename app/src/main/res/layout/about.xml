@@ -16,9 +16,11 @@
             android:orientation="vertical"
             android:layout_margin="2dp">
 
-            <include layout="@layout/developer_card_one"/>
             <include layout="@layout/developer_card_two"/>
             <include layout="@layout/developer_card_three"/>
+
+            <include layout="@layout/developer_card_one" />
+
             <include layout="@layout/developer_card_four"/>
 
         </LinearLayout>

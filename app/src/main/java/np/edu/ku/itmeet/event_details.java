@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.method.LinkMovementMethod;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -81,6 +82,31 @@ String title,content,id,url;
         //Toast.makeText(getContext(),"JJJ",Toast.LENGTH_LONG).show();
 
         return rootview;
+    }
+
+    @Override
+    public void onResume() {
+
+        super.onResume();
+
+        getView().setFocusableInTouchMode(true);
+        getView().requestFocus();
+        getView().setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK){
+
+                    // handle back button
+                    getActivity().getSupportFragmentManager().popBackStack();
+
+                    return true;
+
+                }
+
+                return false;
+            }
+        });
     }
 
 }

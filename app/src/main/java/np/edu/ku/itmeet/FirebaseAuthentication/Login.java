@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.text.TextUtils;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+import np.edu.ku.itmeet.HomeFragment;
 import np.edu.ku.itmeet.R;
 
 
@@ -101,6 +103,36 @@ public class Login extends Fragment {
 
 
         return rootView;
+    }
+
+    @Override
+    public void onResume() {
+
+        super.onResume();
+
+        getView().setFocusableInTouchMode(true);
+        getView().requestFocus();
+        getView().setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK){
+
+                    // handle back button
+                    //getActivity().getSupportFragmentManager().popBackStack();
+                    Fragment fragment = new HomeFragment();
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                    ft.replace(R.id.frag_login, fragment);
+                    ft.addToBackStack("tag");
+                    ft.commit();
+                    return true;
+
+                }
+
+                return false;
+            }
+        });
     }
 
     //method for user login

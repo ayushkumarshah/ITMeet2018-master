@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View parentView = inflater.inflate(R.layout.home, container, false);
         context = parentView.getContext();
         activity = getActivity();
-        ImageButton verisk, yomari, neo, nta,gbd, sunway, doit, ekantipur, worldlink, ittn, prime;
+        ImageButton verisk, yomari, neo, nta,gbd, sunway, doit,cynical, ekantipur, worldlink, ittn, prime;
         verisk = (ImageButton) parentView.findViewById(R.id.verisk);
         verisk.setOnClickListener(this);
         yomari = (ImageButton) parentView.findViewById(R.id.yomari);
@@ -52,6 +52,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         ittn.setOnClickListener(this);
         prime = (ImageButton) parentView.findViewById(R.id.prime);
         prime.setOnClickListener(this);
+        cynical = (ImageButton) parentView.findViewById(R.id.cynical);
+        cynical.setOnClickListener(this);
         mCustomPagerAdapter = new CustomPagerAdapter(container.getContext());
 
         mViewPager = (ViewPager) parentView.findViewById(R.id.pager);
@@ -90,6 +92,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://doit.gov.np/")));
                 break;
 
+            case R.id.cynical:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://itmeet.ku.edu.np/")));
+                               break;
             case R.id.ekantipur:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ekantipur.com/")));
                 break;

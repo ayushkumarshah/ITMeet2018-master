@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +54,30 @@ public class AboutFragment extends Fragment implements View.OnClickListener{
         }
 
     @Override
+    public void onResume() {
+
+        super.onResume();
+
+        getView().setFocusableInTouchMode(true);
+        getView().requestFocus();
+        getView().setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK){
+
+                    // handle back button
+                    getActivity().getSupportFragmentManager().popBackStack();
+
+                    return true;
+
+                }
+
+                return false;
+            }
+        });
+    }
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
@@ -97,11 +122,11 @@ public class AboutFragment extends Fragment implements View.OnClickListener{
 
             case R.id.buttong3:
                 // do your code
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/deepeshshrestha")));
                 break;
             case R.id.buttona3:
                 // do your code
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(" https://twitter.com/")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/haku_the_black")));
                 break;
             case R.id.buttongp4:
                 // do your code
@@ -114,7 +139,7 @@ public class AboutFragment extends Fragment implements View.OnClickListener{
                 break;
             case R.id.buttona4:
                 // do your code
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(" https://twitter.com/leosuyog")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/leosuyog")));
 
                 break;
         }

@@ -7,6 +7,7 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import np.edu.ku.itmeet.HomeFragment;
 import np.edu.ku.itmeet.R;
 
 
@@ -107,6 +109,36 @@ public class Profile extends Fragment {
 
         }
         return rootView;
+    }
+
+    @Override
+    public void onResume() {
+
+        super.onResume();
+
+        getView().setFocusableInTouchMode(true);
+        getView().requestFocus();
+        getView().setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK){
+
+                    // handle back button
+                    //getActivity().getSupportFragmentManager().popBackStack();
+                    Fragment fragment = new HomeFragment();
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                    ft.replace(R.id.frag_profile, fragment);
+                    ft.addToBackStack("tag");
+                    ft.commit();
+                    return true;
+
+                }
+
+                return false;
+            }
+        });
     }
 }
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="np.edu.ku.itmeet.AboutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="2dp">
+
+            <include layout="@layout/developer_card_one"/>
+            <include layout="@layout/developer_card_two"/>
+            <include layout="@layout/developer_card_three"/>
+            <include layout="@layout/developer_card_four"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+

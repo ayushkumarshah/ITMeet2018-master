@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">IT Meet 2018</string>
+    <string name="facebook">Facebook</string>
+    <string name="github">github</string>
+    <string name="twitter">Twitter</string>
+
+    <string-array name="batch">
+
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+
+
+    </string-array>
+
+    <string-array name="semester">
+        <item>Third semester</item>
+        <item>Fourth semester</item>
+        <item>Fifth semester</item>
+        <item>Sixth semester</item>
+        <item>Seventh semester</item>
+        <item>Eight semester</item>
+    </string-array>
+
+    <string-array name="project_theme">
+        <item>Pattern Analysis and Data Visualization</item>
+        <item>Digital Assistant for Enterprises</item>
+        <item>Crime</item>
+        <item>Child Welfare</item>
+        <item>Developer Tool</item>
+        <item>Tourism and Hospitality</item>
+        <item>Agriculture</item>
+
+    </string-array>
+
+    <string-array name="group">
+        <item>Computer Engineering</item>
+        <item>Computer Science</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="age">
+        <item>Below 18</item>
+        <item>18-25</item>
+        <item>Above 25</item>
+    </string-array>
+
+    <string-array name="level">
+        <item>College Student</item>
+        <item>Fresher</item>
+        <item>Job Holder</item>
+        <item>Trainee</item>
+        <item> Diploma Student</item>
+    </string-array>
+
+    <string-array name="experience">
+        <item> None</item>
+        <item>1+ year</item>
+        <item>2+ years</item>
+        <item>3+ years</item>
+    </string-array>
+
+    <string-array name="work">
+        <item>Reasearch and Development</item>
+        <item>Product development</item>
+        <item>Quality Assurance</item>
+        <item>Marketing and sales</item>
+    </string-array>
+
+    <string-array name="design">
+        <item>Photoshop</item>
+        <item>Illustrator</item>
+        <item>Inkscape</item>
+        <item>GIMP</item>
+        <item>HTML / CSS</item>
+    </string-array>
+
+    <string-array name="hear">
+        <item>Website</item>
+        <item>Friend</item>
+        <item>Newsletter</item>
+        <item>Advertisement</item>
+    </string-array>
+
+    <string-array name="yn">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="ed">
+        <item>SLC or under</item>
+        <item> High School</item>
+        <item> Undergraduate</item>
+        <item>Graduate</item>
+    </string-array>
+
+
+    <string-array name="cat">
+        <item>Newbie</item>
+        <item>Intermediate</item>
+        <item>Profesional</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="title_activity_sign_up">Sign in</string>
+
+    <string name="admob_banner">ca-app-pub-9138801031375283/8781082813</string>
+    <string name="profile_name">Profile</string>
+
+
+</resources>

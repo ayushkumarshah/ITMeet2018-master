@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+
+    tools:context="np.edu.ku.itmeet.registration">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btn_alumni_meet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:text="Alumni Meet" />
+
+    <Button
+        android:id="@+id/btn_yomari_code_camp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_alumni_meet"
+        android:layout_alignStart="@+id/btn_alumni_meet"
+        android:layout_below="@+id/btn_alumni_meet"
+        android:text="Yomari Code Camp" />
+
+    <Button
+        android:id="@+id/btn_hackathon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_yomari_code_camp"
+        android:layout_alignStart="@+id/btn_yomari_code_camp"
+        android:layout_below="@+id/btn_yomari_code_camp"
+        android:text="hackathon" />
+
+    <Button
+        android:id="@+id/btn_career_fair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_hackathon"
+        android:layout_alignStart="@+id/btn_hackathon"
+        android:layout_below="@+id/btn_hackathon"
+        android:text="career Fair" />
+
+    <Button
+        android:id="@+id/btn_software_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_career_fair"
+        android:layout_alignStart="@+id/btn_career_fair"
+        android:layout_below="@+id/btn_career_fair"
+        android:text="Software Competition" />
+
+    <Button
+        android:id="@+id/btn_hardware_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_software_comp"
+        android:layout_alignStart="@+id/btn_software_comp"
+        android:layout_below="@+id/btn_software_comp"
+        android:text="Hardware Competition" />
+
+    <Button
+        android:id="@+id/btn_coding_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_hardware_comp"
+        android:layout_alignStart="@+id/btn_hardware_comp"
+        android:layout_below="@+id/btn_hardware_comp"
+        android:text="Coding Competition" />
+
+    <Button
+        android:id="@+id/btn_design_comp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_coding_comp"
+        android:layout_alignStart="@+id/btn_coding_comp"
+        android:layout_below="@+id/btn_coding_comp"
+        android:text="Design Competition" />
+
+    <Button
+        android:id="@+id/btn_nephack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_design_comp"
+        android:layout_alignStart="@+id/btn_design_comp"
+        android:layout_below="@+id/btn_design_comp"
+        android:text="NepHack" />
+</RelativeLayout>

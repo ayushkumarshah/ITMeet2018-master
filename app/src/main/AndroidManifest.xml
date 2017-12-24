@@ -11,6 +11,7 @@
         android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:largeHeap="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name="np.edu.ku.itmeet.MainActivity">
             <intent-filter>

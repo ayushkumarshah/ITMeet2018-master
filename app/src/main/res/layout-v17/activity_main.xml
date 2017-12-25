@@ -19,11 +19,10 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <Button
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:background="@drawable/titlebar_menu_selector"
+                android:background="@drawable/titlebar_menu_selector_left"
                 android:id="@+id/title_bar_left_menu"
                 android:layout_gravity="start|center_vertical"
                 android:layout_marginStart="10dp"/>
@@ -40,7 +39,7 @@
             <Button
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:background="@drawable/titlebar_menu_selector"
+                android:background="@drawable/titlebar_menu_selector_right"
                 android:id="@+id/title_bar_right_menu"
                 android:layout_gravity="end|center_vertical"
                 android:layout_marginEnd="10dp"/>

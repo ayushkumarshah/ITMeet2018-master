@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/ThemeOverlay.AppCompat"
-    android:background="#000000"
+    android:background="#ffffff"
     android:id="@+id/frag_login"
     tools:context="np.edu.ku.itmeet.FirebaseAuthentication.Login">
 
@@ -23,9 +23,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
             <AutoCompleteTextView
                 android:id="@+id/email_login"
@@ -34,13 +31,12 @@
                 android:hint="@string/prompt_email"
                 android:inputType="textEmailAddress"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:backgroundTint="#000000"/>
 
-        </android.support.design.widget.TextInputLayout>
 
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
             <EditText
                 android:id="@+id/password_login"
@@ -52,9 +48,11 @@
                 android:imeOptions="actionUnspecified"
                 android:inputType="textPassword"
                 android:maxLines="1"
-                android:singleLine="true" />
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:backgroundTint="#000000"/>
 
-        </android.support.design.widget.TextInputLayout>
 
         <Button
             android:id="@+id/button_login"
@@ -70,7 +68,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:text="No Account? Sign Up Here" />
+            android:text="No Account? Sign Up Here"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:backgroundTint="#000000"/>
 
         <Button
             android:id="@+id/button_forgot"

@@ -1,14 +1,15 @@
 <FrameLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/frag_event_registration">
+    android:id="@+id/frag_event_registration"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#000000"
+    android:background="#fff"
 
     android:layout_height="match_parent"
     tools:context="np.edu.ku.itmeet.EventRegistration">
@@ -43,13 +44,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t0"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l0"
@@ -63,6 +66,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -70,8 +75,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -82,13 +89,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l1"
@@ -102,6 +111,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -109,8 +120,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -121,13 +134,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l2"
@@ -141,6 +156,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -148,8 +165,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -160,13 +179,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l3"
@@ -180,6 +201,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -187,8 +210,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -199,13 +224,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l4"
@@ -219,6 +246,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -226,8 +255,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -238,13 +269,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l5"
@@ -258,6 +291,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -265,8 +300,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -277,13 +314,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l6"
@@ -297,6 +336,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -304,8 +345,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -316,13 +359,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l7"
@@ -336,6 +381,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -343,8 +390,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -355,13 +404,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t8"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l8"
@@ -375,6 +426,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -382,8 +435,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -394,13 +449,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t9"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l9"
@@ -414,6 +471,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -421,8 +480,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -433,13 +494,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t10"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l10"
@@ -453,6 +516,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -460,8 +525,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -472,13 +539,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t11"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l11"
@@ -492,6 +561,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -499,8 +570,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -511,13 +584,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t12"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l12"
@@ -531,6 +606,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -538,8 +615,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -550,13 +629,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t13"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l13"
@@ -570,6 +651,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -577,8 +660,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -589,13 +674,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t14"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l14"
@@ -609,6 +696,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -616,8 +705,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
                 </LinearLayout>
 
@@ -628,13 +719,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
+                android:padding="4dp"
                 android:visibility="gone">
 
                 <TextView
                     android:id="@+id/t15"
-                    android:layout_width="wrap_content"
+                    android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:textColor="#000000" />
 
                 <LinearLayout
                     android:id="@+id/l15"
@@ -648,6 +741,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000"
                         android:visibility="gone" />
 
                     <EditText
@@ -655,11 +750,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:backgroundTint="#000000"
                         android:ems="10"
                         android:inputType="textImeMultiLine|textPersonName"
+                        android:textColor="#000000"
                         android:visibility="gone" />
-
-
 
 
                 </LinearLayout>

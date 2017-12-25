@@ -2,31 +2,30 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/frag_registration">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#ffffff"
 
+    android:padding="10dp"
     tools:context="np.edu.ku.itmeet.registration">
 
     <!-- TODO: Update blank fragment layout -->
 
     <Button
         android:id="@+id/btn_alumni_meet"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="14dp"
         android:text="Alumni Meet" />
 
     <Button
         android:id="@+id/btn_yomari_code_camp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_alumni_meet"
         android:layout_alignStart="@+id/btn_alumni_meet"
@@ -35,7 +34,7 @@
 
     <Button
         android:id="@+id/btn_hackathon"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_yomari_code_camp"
         android:layout_alignStart="@+id/btn_yomari_code_camp"
@@ -44,7 +43,7 @@
 
     <Button
         android:id="@+id/btn_career_fair"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_hackathon"
         android:layout_alignStart="@+id/btn_hackathon"
@@ -53,7 +52,7 @@
 
     <Button
         android:id="@+id/btn_software_comp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_career_fair"
         android:layout_alignStart="@+id/btn_career_fair"
@@ -62,7 +61,7 @@
 
     <Button
         android:id="@+id/btn_hardware_comp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_software_comp"
         android:layout_alignStart="@+id/btn_software_comp"
@@ -71,7 +70,7 @@
 
     <Button
         android:id="@+id/btn_coding_comp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_hardware_comp"
         android:layout_alignStart="@+id/btn_hardware_comp"
@@ -80,7 +79,7 @@
 
     <Button
         android:id="@+id/btn_design_comp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_coding_comp"
         android:layout_alignStart="@+id/btn_coding_comp"
@@ -89,15 +88,11 @@
 
     <Button
         android:id="@+id/btn_nephack"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/btn_design_comp"
         android:layout_alignStart="@+id/btn_design_comp"
         android:layout_below="@+id/btn_design_comp"
         android:text="NepHack" />
-
-
-
-
 </RelativeLayout>
 </FrameLayout>

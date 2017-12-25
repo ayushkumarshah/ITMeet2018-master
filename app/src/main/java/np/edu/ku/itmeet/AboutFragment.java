@@ -1,8 +1,10 @@
 package np.edu.ku.itmeet;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentSender;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -87,7 +89,7 @@ public class AboutFragment extends Fragment implements View.OnClickListener{
         // default method for handling onClick Events..
         switch (dev.getId()) {
             case R.id.buttongp1:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/100000956408193")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("fb://profile/100000956408193")));
 
                 break;
 

@@ -3,6 +3,7 @@ package np.edu.ku.itmeet;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.text.Html;
 import android.text.Spannable;
 import android.text.method.LinkMovementMethod;
@@ -10,12 +11,14 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class event_details extends Fragment {
+public class event_details extends Fragment implements View.OnClickListener {
 
 String title,content,id,url;
     public event_details() {
@@ -36,7 +39,9 @@ String title,content,id,url;
          Title=(TextView)rootview.findViewById(R.id.title);
         Content=(TextView)rootview.findViewById(R.id.content);
        // Url=(TextView)rootview.findViewById(R.id.url);
+        Button button=(Button)rootview.findViewById(R.id.register);
 
+        button.setOnClickListener(this);
 
         EventsDatabase myDB=new EventsDatabase(getContext());
 
@@ -85,6 +90,88 @@ String title,content,id,url;
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onClick(View v) {
+        final Bundle bundle = new Bundle();
+        int check=0;
+        switch (v.getId()) {
+
+            case R.id.register:
+                Fragment fragment = new EventRegistration();
+                switch (title){
+                    case "Alumni Meet":
+                        bundle.putString("event", "alumni_meet");
+                        check=1;
+                        break;
+
+                    case "Yomari Code Camp":
+                        bundle.putString("event", "yomari_code_camp");
+                        check=1;
+
+                        break;
+
+                    case "Career Fair":
+                        bundle.putString("event", "career_fair");
+                        check=1;
+
+                        break;
+
+                    case "Hackathon":
+                        bundle.putString("event", "hackathon");
+                        check=1;
+
+                        break;
+
+                    case "Hardware Competition":
+                        bundle.putString("event", "hardware_comp");
+                        check=1;
+                        break;
+
+                    case "Software Competition":
+                        bundle.putString("event", "software_comp");
+                        check=1;
+                        break;
+
+                    case "Coding Tournament":
+                        bundle.putString("event", "coding_comp");
+                        check=1;
+                        break;
+
+
+                    case "Design Challenge":
+                        bundle.putString("event", "design_comp");
+                        check=1;
+                        break;
+
+                    case "NepHack":
+                        bundle.putString("event", "nephack");
+                        check=1;
+                        break;
+
+                    default:
+                        check=0;
+
+                }
+                if (check == 1) {
+
+                    fragment.setArguments(bundle);
+                    FragmentTransaction ft = getFragmentManager().beginTransaction();
+                    ft.replace(R.id.frag_event_details, fragment);
+                    ft.commit();
+                }
+                else
+                {
+                    Toast.makeText(getContext(),"Registration Form Not Available",Toast.LENGTH_LONG).show();
+                }
+                break;
+
+        }
+    }
+    @Override
     public void onResume() {
 
         super.onResume();
@@ -108,5 +195,6 @@ String title,content,id,url;
             }
         });
     }
+
 
 }

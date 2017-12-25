@@ -111,13 +111,13 @@ public class EditProfile extends Fragment {
                 if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK){
 
                     // handle back button
-                    getActivity().getSupportFragmentManager().popBackStack();
-                    /*Fragment fragment = new HomeFragment();
-                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                    //getActivity().getSupportFragmentManager().popBackStack();
+                    Fragment fragment = new HomeFragment();
+                    FragmentTransaction ft  = getActivity().getSupportFragmentManager().beginTransaction();
 
-                    ft.replace(R.id.frags_profile, fragment);
+                    ft.replace(R.id.frag_edit_profile, fragment);
                     ft.addToBackStack("tag");
-                    ft.commit();*/
+                    ft.commit();
                     return true;
 
                 }

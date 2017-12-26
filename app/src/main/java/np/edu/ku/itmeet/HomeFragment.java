@@ -29,9 +29,23 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View parentView = inflater.inflate(R.layout.home, container, false);
         context = parentView.getContext();
         activity = getActivity();
-        ImageButton verisk, yomari, neo, nta,gbd, sunway, doit,cynical, ekantipur, worldlink, ittn, prime;
+        ImageButton verisk, yomari, neo, nta,gbd, sunway, doit,cynical, ekantipur, worldlink, ittn, ug, smartcell,leapfrog,logpoint,es,endeavor,cb, prime;
         verisk = (ImageButton) parentView.findViewById(R.id.verisk);
         verisk.setOnClickListener(this);
+        smartcell = (ImageButton) parentView.findViewById(R.id.smartcell);
+        smartcell.setOnClickListener(this);
+        leapfrog = (ImageButton) parentView.findViewById(R.id.leapfrog);
+        leapfrog.setOnClickListener(this);
+        ug = (ImageButton) parentView.findViewById(R.id.ug);
+        ug.setOnClickListener(this);
+        logpoint = (ImageButton) parentView.findViewById(R.id.logpoint);
+        logpoint.setOnClickListener(this);
+        es = (ImageButton) parentView.findViewById(R.id.es);
+        es.setOnClickListener(this);
+        endeavor = (ImageButton) parentView.findViewById(R.id.endeavor);
+        endeavor.setOnClickListener(this);
+        cb = (ImageButton) parentView.findViewById(R.id.cb);
+        cb.setOnClickListener(this);
         yomari = (ImageButton) parentView.findViewById(R.id.yomari);
         yomari.setOnClickListener(this);
         neo = (ImageButton) parentView.findViewById(R.id.neo);
@@ -83,7 +97,9 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
             case R.id.gbd:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.growbydata.com/")));
                 break;
-
+            case R.id.ug:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.urbangirl.me/")));
+                break;
             case R.id.sunway:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://sunway.edu.np/")));
                 break;
@@ -92,9 +108,27 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://doit.gov.np/")));
                 break;
 
+            case R.id.smartcell:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://itmeet.ku.edu.np/")));
+                break;
+            case R.id.leapfrog:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://itmeet.ku.edu.np/")));
+                break;
+            case R.id.logpoint:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://itmeet.ku.edu.np/")));
+                break;
+            case R.id.es:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://itmeet.ku.edu.np/")));
+                break;
+            case R.id.endeavor:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://endeavor.com.np/")));
+                break;
+            case R.id.cb:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://itmeet.ku.edu.np/")));
+                break;
             case R.id.cynical:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://itmeet.ku.edu.np/")));
-                               break;
+                break;
             case R.id.ekantipur:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ekantipur.com/")));
                 break;

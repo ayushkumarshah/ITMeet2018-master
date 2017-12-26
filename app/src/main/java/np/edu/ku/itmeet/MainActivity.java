@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resideMenu.addMenuItem(itemNews, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemEvents, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemEventsReg, ResideMenu.DIRECTION_LEFT);
-        resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_LEFT);
+        resideMenu.addMenuItem(itemProfile, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemVisit, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemShare, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemAbout, ResideMenu.DIRECTION_RIGHT);

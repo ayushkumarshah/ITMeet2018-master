@@ -45,19 +45,19 @@ public class Reset extends Fragment {
         View rootView=inflater.inflate(R.layout.fragment_reset, container, false);
 
         forgot_email=rootView.findViewById(R.id.forgot_email);
-        back=rootView.findViewById(R.id.btn_back);
+        //back=rootView.findViewById(R.id.btn_back);
         email=rootView.findViewById(R.id.button_forgot_password);
 
         progressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);
         auth = FirebaseAuth.getInstance();
 
 
-        back.setOnClickListener(new View.OnClickListener() {
+        /*back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 getActivity().finish();
             }
-        });
+        });*/
 
         email.setOnClickListener(new View.OnClickListener() {
             @Override

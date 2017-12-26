@@ -25,6 +25,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import static np.edu.ku.itmeet.NewsFragment.CheckInternetConnection;
+
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -50,7 +52,7 @@ public class EventFragment extends Fragment implements View.OnClickListener {
         context = rootview.getContext();
         activity = getActivity();
 
-        ImageView Alumini,Blood,Career,Clash,Codecamp,Coding,Cs,Design,Dota,Fifa,Googling,Hackathon,Hwcomp,Ideapitch,Itquiz,Localization,Penetration,Photography,Projectdemo,Swcomp;
+        ImageView Alumini,Blood,Career,Clash,Codecamp,Ltsp,Selfie,Python,Coding,Cs,Design,Dota,Fifa,Googling,Hackathon,Hwcomp,Ideapitch,Itquiz,Localization,Penetration,Photography,Projectdemo,Swcomp;
 
         Alumini=(ImageView) rootview.findViewById(R.id.alumini);
         Alumini.setOnClickListener(this);
@@ -66,6 +68,12 @@ public class EventFragment extends Fragment implements View.OnClickListener {
         Coding.setOnClickListener(this);
         Cs=(ImageView) rootview.findViewById(R.id.cs);
         Cs.setOnClickListener(this);
+        Ltsp=(ImageView) rootview.findViewById(R.id.ltsp);
+        Ltsp.setOnClickListener(this);
+        Selfie=(ImageView) rootview.findViewById(R.id.selfie);
+        Selfie.setOnClickListener(this);
+        Python=(ImageView) rootview.findViewById(R.id.python);
+        Python.setOnClickListener(this);
         Design=(ImageView) rootview.findViewById(R.id.design);
         Design.setOnClickListener(this);
         Dota=(ImageView) rootview.findViewById(R.id.dota);
@@ -93,7 +101,7 @@ public class EventFragment extends Fragment implements View.OnClickListener {
         Swcomp=(ImageView) rootview.findViewById(R.id.swcomp);
         Swcomp.setOnClickListener(this);
 
-        if (NewsFragment.CheckInternetConnection(context))
+        if (CheckInternetConnection(context))
         {
 
             getData();
@@ -195,6 +203,21 @@ public class EventFragment extends Fragment implements View.OnClickListener {
                 // do your code
                 bundle.putString("name","Counter Strike Tournament");
                 bundle.putString("id","193");
+                break;
+            case R.id.ltsp:
+                // do your code
+                bundle.putString("name","LTSP");
+                bundle.putString("id","327");
+                break;
+            case R.id.selfie:
+                // do your code
+                bundle.putString("name","Endeavor ITMEET 2018 Selfie contest");
+                bundle.putString("id","307");
+                break;
+            case R.id.python:
+                // do your code
+                bundle.putString("name","Python Meetup");
+                bundle.putString("id","315");
                 break;
 
             case R.id.design:

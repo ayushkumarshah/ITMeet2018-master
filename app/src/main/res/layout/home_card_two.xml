@@ -41,7 +41,7 @@
             android:paddingRight="5dp"
             android:paddingStart="5dp"
             android:paddingTop="5dp"
-            android:text="Gold Sponsors"
+            android:text="Supporting Government Bodies"
             android:background="#8DCED6"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
@@ -55,73 +55,22 @@
             android:orientation="horizontal">
             <LinearLayout
                 android:layout_width="175dp"
-                android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp">
                 <ImageButton
-                    android:id="@+id/verisk"
+                    android:id="@+id/doit"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
                     android:background="@null"
-                    android:src="@drawable/verisk"/>
+                    android:src="@drawable/doit"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
-                <ImageButton
-                    android:id="@+id/yomari"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
-                    android:background="@null"
-                    android:src="@drawable/yomari" />
-            </LinearLayout>
-        </LinearLayout>
-        83BECA<TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="5dp"
-            android:paddingEnd="5dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
-            android:paddingStart="5dp"
-            android:paddingTop="5dp"
-            android:text="Silver Sponsers"
-            android:background="#8DCED6"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="175dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginBottom="2dp">
-                <ImageButton
-                    android:id="@+id/neo"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
-                    android:background="@null"
-                    android:src="@drawable/neo"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp">
                 <ImageButton
                     android:id="@+id/nta"
                     android:layout_width="match_parent"
@@ -141,7 +90,7 @@
             android:paddingRight="5dp"
             android:paddingStart="5dp"
             android:paddingTop="5dp"
-            android:text="Bronze Sponser"
+            android:text="Pre-Event Gold Sponsor"
             android:background="#8DCED6"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
@@ -156,16 +105,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
                 <ImageButton
-                    android:id="@+id/gbd"
+                    android:id="@+id/verisk"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
                     android:background="@null"
-                    android:src="@drawable/gbd"/>
+                    android:src="@drawable/verisk"/>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -177,7 +127,7 @@
             android:paddingRight="5dp"
             android:paddingStart="5dp"
             android:paddingTop="5dp"
-            android:text="Supporting Organizations"
+            android:text="Gold Sponsors"
             android:background="#8DCED6"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
@@ -190,48 +140,95 @@
             android:layout_marginBottom="2dp"
             android:orientation="horizontal">
             <LinearLayout
-                android:layout_width="110dp"
+                android:layout_width="185dp"
                 android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp">
                 <ImageButton
-                    android:id="@+id/sunway"
+                    android:id="@+id/yomari"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
                     android:background="@null"
-                    android:src="@drawable/sunway"/>
+                    android:src="@drawable/yomari"/>
             </LinearLayout>
             <LinearLayout
-                android:layout_width="110dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp">
                 <ImageButton
-                    android:id="@+id/doit"
+                    android:id="@+id/smartcell"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
                     android:background="@null"
-                    android:src="@drawable/doit" />
+                    android:src="@drawable/smartcell"/>
             </LinearLayout>
-
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:text="Silver Sponsors"
+            android:background="#8DCED6"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
             <LinearLayout
-                android:layout_width="132dp"
+                android:layout_width="125dp"
                 android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
-
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp">
                 <ImageButton
-                    android:id="@+id/cynical"
+                    android:id="@+id/neo"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="2dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/neo"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp">
+                <ImageButton
+                    android:id="@+id/leapfrog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/leapfrog" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp">
+                <ImageButton
+                    android:id="@+id/logpoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
                     android:background="@null"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/cynical" />
+                    android:src="@drawable/logpoint" />
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -244,7 +241,7 @@
             android:paddingStart="5dp"
             android:paddingTop="5dp"
             android:background="#8DCED6"
-            android:text="Media Partner                               ISP Partner"
+            android:text="Bronze Sponsor                               Media Partner"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
@@ -256,32 +253,137 @@
             android:layout_marginBottom="2dp"
             android:orientation="horizontal">
             <LinearLayout
-                android:layout_width="175dp"
+                android:layout_width="165dp"
                 android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp">
                 <ImageButton
-                    android:id="@+id/ekantipur"
-                    android:layout_width="match_parent"
+                    android:id="@+id/gbd"
+                    android:layout_width="165dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
                     android:background="@null"
-                    android:src="@drawable/ekantipur"/>
+                    android:src="@drawable/gbd"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp">
                 <ImageButton
-                    android:id="@+id/worldlink"
-                    android:layout_width="match_parent"
+                    android:id="@+id/ekantipur"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
                     android:background="@null"
-                    android:src="@drawable/worldlink"/>
+                    android:src="@drawable/ekantipur"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:background="#8DCED6"
+            android:text="Supporting Organizations"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp">
+                    <ImageButton
+                        android:id="@+id/ug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:background="@null"
+                        android:src="@drawable/ug"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/cynical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:background="@null"
+                        android:src="@drawable/cynical"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="115dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="5dp">
+                    <ImageButton
+                        android:id="@+id/endeavor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:background="@null"
+                        android:src="@drawable/endeavor"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="115dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp">
+                    <ImageButton
+                        android:id="@+id/sunway"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:background="@null"
+                        android:src="@drawable/sunway"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="5dp">
+                    <ImageButton
+                        android:id="@+id/es"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:background="@null"
+                        android:src="@drawable/es" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
         <TextView
@@ -294,7 +396,7 @@
             android:paddingStart="5dp"
             android:paddingTop="5dp"
             android:background="#8DCED6"
-            android:text="Video Partner                               FM Partner"
+            android:text="ISP Partner                          Video Partner"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
@@ -311,28 +413,77 @@
                 android:layout_marginBottom="2dp"
                 android:layout_marginLeft="5dp">
                 <ImageButton
+                    android:id="@+id/worldlink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/worldlink"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp">
+                <ImageButton
                     android:id="@+id/ittn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
                     android:background="@null"
                     android:src="@drawable/ittn"/>
             </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:background="#8DCED6"
+            android:text="Radio Partner           Gaming Equipment Partner"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="175dp"
                 android:layout_height="50dp"
-                android:layout_marginBottom="2dp">
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp">
                 <ImageButton
                     android:id="@+id/prime"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
-                    android:layout_marginBottom="2dp"
                     android:background="@null"
                     android:src="@drawable/prime"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp">
+                <ImageButton
+                    android:id="@+id/cb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/cb"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

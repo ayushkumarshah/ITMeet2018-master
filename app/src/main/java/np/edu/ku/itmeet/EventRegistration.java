@@ -99,104 +99,104 @@ public class EventRegistration extends Fragment {
 
         switch(event){
             case "alumni_meet":
-                title=event_constants.alumni_meet_title;
+                //title=event_constants.alumni_meet_title;
                 fields=event_constants.alumni_meet_fields;
-                help=event_constants.alumni_meet_help;
+//                help=event_constants.alumni_meet_help;
                 keys=event_constants.alumni_meet_keys;
                 types=event_constants.alumni_meet_types;
                 url=event_constants.alumni_meet_url;
                 break;
             case "yomari_code_camp":
-                title=event_constants.code_camp_title;
+//                title=event_constants.code_camp_title;
                 fields=event_constants.code_camp_fields;
-                help=event_constants.code_camp_help;
+//                help=event_constants.code_camp_help;
                 keys=event_constants.code_camp_keys;
                 types=event_constants.code_camp_types;
                 url=event_constants.code_camp_url;
                 break;
             case "hackathon":
-                title=event_constants.hackathon_title;
+//                title=event_constants.hackathon_title;
                 fields=event_constants.hackathon_fields;
-                help=event_constants.hackathon_help;
+//                help=event_constants.hackathon_help;
                 keys=event_constants.hackathon_keys;
                 types=event_constants.hackathon_types;
                 url=event_constants.hackathon_url;
                 break;
             case "career_fair":
-                title=event_constants.career_fair_title;
-                help=event_constants.career_fair_help;
+//                title=event_constants.career_fair_title;
+//                help=event_constants.career_fair_help;
                 fields=event_constants.career_fair_fields;
                 keys=event_constants.career_fair_keys;
                 types=event_constants.career_fair_types;
                 url=event_constants.career_fair_url;
                 break;
             case "hardware_comp":
-                title=event_constants.hardware_comp_title;
-                help=event_constants.hardware_comp_help;
+//                title=event_constants.hardware_comp_title;
+//                help=event_constants.hardware_comp_help;
                 fields=event_constants.hardware_comp_fields;
                 keys=event_constants.hardware_comp_keys;
                 types=event_constants.hardware_comp_types;
                 url=event_constants.hardware_comp_url;
                 break;
             case "software_comp":
-                title=event_constants.software_comp_title;
-                help=event_constants.software_comp_help;
+//                title=event_constants.software_comp_title;
+//                help=event_constants.software_comp_help;
                 fields=event_constants.software_comp_fields;
                 keys=event_constants.software_comp_keys;
                 types=event_constants.software_comp_types;
                 url=event_constants.software_comp_url;
                 break;
             case "coding_comp":
-                title=event_constants.coding_comp_title;
-                help=event_constants.coding_comp_help;
+//                title=event_constants.coding_comp_title;
+//                help=event_constants.coding_comp_help;
                 fields=event_constants.coding_comp_fields;
                 keys=event_constants.coding_comp_keys;
                 types=event_constants.coding_comp_types;
                 url=event_constants.coding_comp_url;
                 break;
             case "design_comp":
-                title=event_constants.design_comp_title;
-                help=event_constants.design_comp_help;
+//                title=event_constants.design_comp_title;
+//                help=event_constants.design_comp_help;
                 fields=event_constants.design_comp_fields;
                 keys=event_constants.design_comp_keys;
                 types=event_constants.design_comp_types;
                 url=event_constants.design_comp_url;
                 break;
             case "nephack":
-                title=event_constants.nephack_title;
-                help=event_constants.nephack_help;
+//                title=event_constants.nephack_title;
+//                help=event_constants.nephack_help;
                 fields=event_constants.nephack_fields;
                 keys=event_constants.nephack_keys;
                 types=event_constants.nephack_types;
                 url=event_constants.nephack_url;
                 break;                        
             case "data_local":
-                title=event_constants.data_local_title;
-                help=event_constants.data_local_help;
+//                title=event_constants.data_local_title;
+//                help=event_constants.data_local_help;
                 fields=event_constants.data_local_fields;
                 keys=event_constants.data_local_keys;
                 types=event_constants.data_local_types;
                 url=event_constants.data_local_url;
                 break;
             case "googling":
-                title=event_constants.googling_title;
-                help=event_constants.googling_help;
+//                title=event_constants.googling_title;
+//                help=event_constants.googling_help;
                 fields=event_constants.googling_fields;
                 keys=event_constants.googling_keys;
                 types=event_constants.googling_types;
                 url=event_constants.googling_url;
                 break;
             case "csgo":
-                title=event_constants.csgo_title;
-                help=event_constants.csgo_help;
+//                title=event_constants.csgo_title;
+//                help=event_constants.csgo_help;
                 fields=event_constants.csgo_fields;
                 keys=event_constants.csgo_keys;
                 types=event_constants.csgo_types;
                 url=event_constants.csgo_url;
                 break;
             case "dota":
-                title=event_constants.dota_title;
-                help=event_constants.dota_help;
+//                title=event_constants.dota_title;
+//                help=event_constants.dota_help;
                 fields=event_constants.dota_fields;
                 keys=event_constants.dota_keys;
                 types=event_constants.dota_types;
@@ -204,7 +204,7 @@ public class EventRegistration extends Fragment {
                 break;
         }
 
-        title_l.setText(title+" Registration");
+       // title_l.setText(title+" Registration");
         
         final SharedPreferences mSharedPreference= PreferenceManager.getDefaultSharedPreferences(getActivity());
         name_x=(mSharedPreference.getString("name",null ));
@@ -346,7 +346,7 @@ public class EventRegistration extends Fragment {
         for(int i=0;i<16;i++){
             if(fields[i]!=null) {
             tv.get(i).setText(fields[i]);
-            th.get(i).setText(help[i]);
+//            th.get(i).setText(help[i]);
             lm.get(i).setVisibility(View.VISIBLE);
             switch (types[i]) {
                 case "text":

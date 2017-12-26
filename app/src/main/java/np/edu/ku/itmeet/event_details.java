@@ -20,6 +20,7 @@ import android.widget.Toast;
  */
 public class event_details extends Fragment implements View.OnClickListener {
 
+    Button button;
 String title,content,id,url;
     public event_details() {
         // Required empty public constructor
@@ -39,7 +40,23 @@ String title,content,id,url;
          Title=(TextView)rootview.findViewById(R.id.title);
         Content=(TextView)rootview.findViewById(R.id.content);
        // Url=(TextView)rootview.findViewById(R.id.url);
-        Button button=(Button)rootview.findViewById(R.id.register);
+        button=(Button)rootview.findViewById(R.id.register);
+        button.setVisibility(View.VISIBLE);
+        String[] event_forms={"Alumini Meet","Yomari Code Camp","Hackathon","Career Fair","NepHack","Software Competition","Hardware Competition","Coding Tournament","Design Challenge","Nephack","Datathon and Localization","Googling","Counter-Strike GO Tournament","Dota 2 Competition"};
+        int btn=0;
+        for(int i=0;i<event_forms.length;i++)
+        {
+
+
+            if (title.equals(event_forms[i]))
+            {
+                btn=1;
+            }
+        }
+        if (btn==0)
+            button.setVisibility(View.INVISIBLE);
+
+
 
         button.setOnClickListener(this);
 
@@ -189,6 +206,7 @@ String title,content,id,url;
                 else
                 {
                     Toast.makeText(getContext(),"Registration Form Not Available",Toast.LENGTH_LONG).show();
+                    button.setVisibility(View.INVISIBLE);
                 }
                 break;
 

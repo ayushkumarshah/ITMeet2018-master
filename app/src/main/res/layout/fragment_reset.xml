@@ -1,90 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/reset"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#ffffff"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
+    android:id="@+id/reset">
 
-    android:fitsSystemWindows="true"
-    tools:context="np.edu.ku.itmeet.FirebaseAuthentication.Reset">
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8DCED6"
         android:orientation="vertical"
-        android:padding="@dimen/activity_horizontal_margin">
-
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_gravity="center"
+        android:fitsSystemWindows="true"
+        tools:context="np.edu.ku.itmeet.FirebaseAuthentication.Reset">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="Forgot Password?"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:padding="10dp"
-            android:textColor="#000000"
-            android:textColorHint="#000000"
-            android:backgroundTint="#000000"
-            android:text="@string/lbl_forgot_password"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
             android:layout_marginBottom="10dp"
             android:gravity="center_horizontal"
             android:textColor="#000000"
             android:textColorHint="#000000"
             android:backgroundTint="#000000"
             android:padding="@dimen/activity_horizontal_margin"
-            android:text="@string/forgot_password_msg"
-            android:textSize="14dp" />
-            <EditText
-                android:id="@+id/forgot_email"
+            android:text="@string/forgot_password_msg"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/login_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="90dp"
+            android:gravity="center_horizontal"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <LinearLayout
+                android:id="@+id/email_register_form"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:textColor="#000000"
-                android:textColorHint="#000000"
-                android:backgroundTint="#000000"
-                android:layout_marginTop="20dp"
-                android:hint="@string/hint_email"
-                android:inputType="textEmailAddress" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
 
-        <!-- Login Button -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/button_forgot_password"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:text="@string/btn_reset_password"
-            android:textColor="@android:color/black" />
+                    <EditText
+                        android:id="@+id/forgot_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/user"
+                        android:drawableTint="#FF4081"
+                        android:singleLine="true"
+                        android:textColor="#000"
+                        android:hint="Email"
+                        android:textColorHint="#000000"
+                        android:backgroundTint="#000000"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
 
-        <Button
-            android:id="@+id/btn_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@null"
-            android:text="@string/btn_back" />
+                <Button
+                    android:id="@+id/button_forgot_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#1e5f75"
+                    android:text="Reset Password"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
 
-    </LinearLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_gravity="center|bottom"
-        android:layout_marginBottom="20dp"
-        android:visibility="gone" />
-
-</android.support.design.widget.CoordinatorLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
 </FrameLayout>

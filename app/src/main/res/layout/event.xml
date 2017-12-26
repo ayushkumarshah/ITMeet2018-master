@@ -12,360 +12,371 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:ignore="UselessParent"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp">
-<ScrollView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:ignore="UselessParent">
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:baselineAligned="false">
-
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/alumini"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/alumini" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="ALUMINI MEET"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/codecamp"
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/codecamp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="YOMARI CODE CAMP"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/hackathon"
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/hackathon" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="HACKATHON"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/fifa"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/fifa" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#212121"
-                    android:text="FIFA 18 GAMING TOURNAMENT"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/coding"
-                    android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/coding" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="CODING COMPETITION"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/career"
-                    android:layout_width="match_parent"
-                    android:layout_height="175dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/career" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="CAREER FAIR"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/idea"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/ideapitch" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="IDEA PITCHING"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/photography"
-                    android:layout_width="match_parent"
-                    android:layout_height="86dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/photography" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="PHOTOGRAPHY CONTEST"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/localization"
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/localization" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="DATATHON AND LOCALIZATION"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/cs"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/cs" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="COUNTER-STRIKE GO TOURNAMENT"
-                    android:textAlignment="center" />
-
-                <ImageView
-                    android:id="@+id/dota"
-                    android:layout_width="match_parent"
-                    android:layout_height="121dp"
-                    android:background="#212121"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/dota" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#212121"
-                    android:text="DOTA 2 COMPETITION"
-                    android:textAlignment="center" />
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false">
 
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/alumini"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/alumini" />
 
-                <ImageView
-                    android:id="@+id/projectdemo"
-                    android:layout_width="match_parent"
-                    android:layout_height="155dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/projectdemo" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="ALUMINI MEET"
+                            android:textAlignment="center" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="PROJECT DEMONSTRATION"
-                    android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/codecamp"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/codecamp" />
 
-                <ImageView
-                    android:id="@+id/swcomp"
-                    android:layout_width="match_parent"
-                    android:layout_height="145.5dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/swcomp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="YOMARI CODE CAMP"
+                            android:textAlignment="center" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="SOFTWARE COMPETITION"
-                    android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/hackathon"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/hackathon" />
 
-                <ImageView
-                    android:id="@+id/googling"
-                    android:layout_width="match_parent"
-                    android:layout_height="95dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/googling" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="HACKATHON"
+                            android:textAlignment="center" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="GOOGLING"
-                    android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/fifa"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/fifa" />
 
-                <ImageView
-                    android:id="@+id/design"
-                    android:layout_width="match_parent"
-                    android:layout_height="129.5dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/designing" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="FIFA 18 GAMING TOURNAMENT"
+                            android:textAlignment="center" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="DESIGNING CHALLENGE"
-                    android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/coding"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/coding" />
 
-                <ImageView
-                    android:id="@+id/clash"
-                    android:layout_width="match_parent"
-                    android:layout_height="265dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/clash" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="CODING COMPETITION"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/localization"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/localization" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="CLASH ROYALE"
-                    android:textAlignment="center" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="DATATHON AND LOCALIZATION"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/career"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/career" />
 
-                <ImageView
-                    android:id="@+id/penetration"
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/penetration" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="CAREER FAIR"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/photography"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/photography" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="PENETRATION TESTING COMPETATION"
-                    android:textAlignment="center" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="PHOTOGRAPHY CONTEST"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/idea"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ideapitch" />
 
-                <ImageView
-                    android:id="@+id/itquiz"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/itquiz" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="IDEA PITCHING"
+                            android:textAlignment="center" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="IT QUIZ"
-                    android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/ltsp"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ltsp" />
 
-                <ImageView
-                    android:id="@+id/hwcomp"
-                    android:layout_width="match_parent"
-                    android:layout_height="142.5dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/hwcomp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="LTSP"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/dota"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/dota" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="2dp"
-                    android:background="#212121"
-                    android:text="HARDWARE COMPETITION"
-                    android:textAlignment="center" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="DOTA 2 COMPETITION"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/python"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/python" />
 
-                <ImageView
-                    android:id="@+id/blood"
-                    android:layout_width="match_parent"
-                    android:layout_height="175dp"
-                    android:background="@null"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/blooddonation" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="Python Meetup"
+                            android:textAlignment="center" />
+                    </LinearLayout>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#212121"
-                    android:text="BLOOD DONATION EVENT"
-                    android:textAlignment="center" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/swcomp"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/swcomp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="SOFTWARE COMPETITION"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/googling"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/googling" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="GOOGLING"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/design"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/designing" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="DESIGNING CHALLENGE"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/projectdemo"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/projectdemo" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="PROJECT DEMONSTRATION"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/clash"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/clash" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="CLASH ROYALE"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/penetration"
+                            android:layout_width="match_parent"
+                            android:layout_height="85dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/penetration" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="NEPHACK"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/itquiz"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/itquiz" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="IT QUIZ"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/cs"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="#212121"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/cs" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="Counter-Strike GO Tournament"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/hwcomp"
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/hwcomp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="HARDWARE COMPETITION"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/blood"
+                            android:layout_width="match_parent"
+                            android:layout_height="92dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/blooddonation" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="BLOOD DONATION EVENT"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/selfie"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/selfie" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="Endeavor ITMEET 2018 Selfie contest"
+                            android:textAlignment="center" />
 
 
-            </LinearLayout>
-
-        </LinearLayout>
-    </android.support.constraint.ConstraintLayout>
-</ScrollView>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
     </LinearLayout>
 </FrameLayout>

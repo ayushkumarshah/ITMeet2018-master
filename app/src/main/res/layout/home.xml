@@ -9,13 +9,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_margin="2dp">
-                <include layout="@layout/home_card_one"/>
-                <include layout="@layout/home_card_two"/>
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="2dp">
+            <include layout="@layout/home_card_one"/>
+            <include layout="@layout/home_card_two"/>
+        </LinearLayout>
     </ScrollView>
 </FrameLayout>

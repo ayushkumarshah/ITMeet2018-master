@@ -104,7 +104,8 @@ public class EditProfile extends Fragment {
                 }
                 else{
                     saveUserInformation();
-                }            }
+                }           
+            }
         });
   spinner_age = ArrayAdapter.createFromResource(getActivity(),R.array.age, android.R.layout.simple_spinner_item);
         spinner_gender = ArrayAdapter.createFromResource(getActivity(),R.array.gender, android.R.layout.simple_spinner_item);

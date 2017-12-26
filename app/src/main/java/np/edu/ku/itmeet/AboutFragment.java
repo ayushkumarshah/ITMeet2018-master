@@ -8,6 +8,7 @@ import android.content.IntentSender;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -69,8 +70,13 @@ public class AboutFragment extends Fragment implements View.OnClickListener{
                 if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK){
 
                     // handle back button
-                    getActivity().getSupportFragmentManager().popBackStack();
+                    //getActivity().getSupportFragmentManager().popBackStack();
+                    Fragment fragment = new HomeFragment();
+                    FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
 
+                    ft.replace(R.id.frag_about, fragment);
+                    ft.addToBackStack("tag");
+                    ft.commit();
                     return true;
 
                 }

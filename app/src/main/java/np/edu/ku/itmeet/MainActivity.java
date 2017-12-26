@@ -10,6 +10,9 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import np.edu.ku.itmeet.FirebaseAuthentication.Login;
+import np.edu.ku.itmeet.FirebaseAuthentication.Profile;
+import np.edu.ku.itmeet.FirebaseAuthentication.Register;
+
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
 
@@ -34,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         setUpMenu();
         if( savedInstanceState == null )
-            changeFragment(new HomeFragment());
+            changeFragment(new Register());
 
         this.getWindow().getDecorView().setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
@@ -120,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }else if (view == itemEventsReg) {
             changeFragment(new registration());
         }else if (view == itemProfile) {
-            changeFragment(new Login());
+            changeFragment(new Profile());
         }else if (view == itemEvents){
             changeFragment(new EventFragment());
         }else if (view == itemShare){

@@ -88,7 +88,7 @@ public class Register extends Fragment {
 
         //if getCurrentUser does not returns null
         if(firebaseAuth.getCurrentUser() != null){
-            Fragment fragment=new Profile();
+            Fragment fragment=new HomeFragment();
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.replace(R.id.main_fragment, fragment);
             ft.commit();

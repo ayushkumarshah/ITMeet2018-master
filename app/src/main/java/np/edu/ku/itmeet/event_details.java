@@ -152,6 +152,29 @@ String title,content,id,url;
                         check=1;
                         break;
 
+                    case "Datathon and Localization":
+                        bundle.putString("event", "data_local");
+                        check=1;
+                        break;
+
+                    case "Googling":
+
+                        bundle.putString("event", "googling");
+                        check=1;
+                        break;
+
+                    case "Counter-Strike GO Tournament":
+
+                        bundle.putString("event", "csgo");
+                        check=1;
+                        break;
+
+                    case "Dota 2 Competition":
+
+                        bundle.putString("event", "dota");
+                        check=1;
+                        break;
+
                     default:
                         check=0;
 

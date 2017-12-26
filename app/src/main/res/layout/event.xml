@@ -175,7 +175,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:background="#212121"
-                    android:text="LOCALIZATION"
+                    android:text="DATATHON AND LOCALIZATION"
                     android:textAlignment="center" />
 
                 <ImageView
@@ -191,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="2dp"
                     android:background="#212121"
-                    android:text="COUNTER-STRIKE TOURNAMENT"
+                    android:text="COUNTER-STRIKE GO TOURNAMENT"
                     android:textAlignment="center" />
 
                 <ImageView

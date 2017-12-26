@@ -4,6 +4,8 @@ package np.edu.ku.itmeet.FirebaseAuthentication;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Spinner;
+import android.widget.ArrayAdapter;
 import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;

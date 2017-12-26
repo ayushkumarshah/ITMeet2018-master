@@ -54,6 +54,9 @@ public class EditProfile extends Fragment {
     String proS;
     FirebaseAuth mAuth;
     FirebaseUser user;
+    
+    String type="";
+    TextView title;
 
     ArrayAdapter<CharSequence> spinner_age,spinner_gender,spinner_lvl,spinner_event;
     public EditProfile() {
@@ -80,6 +83,8 @@ public class EditProfile extends Fragment {
         profile_lvl=rootView.findViewById(R.id.spinner_profile_lvl);
         save_button=rootView.findViewById(R.id.button_save_profile);
 
+        title=rootView.findViewById(R.id.edit_profile_title);
+
 
         usersDB = FirebaseDatabase.getInstance().getReference("usersDB");
 
@@ -92,8 +97,14 @@ public class EditProfile extends Fragment {
         save_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                saveUserInformation();
-            }
+                if(isEmpty(profile_name)||isEmpty(profile_adddress)||isEmpty(profile_phone)){
+                    profile_name.setError("Required Field");
+                    profile_adddress.setError("Required Field");
+                    profile_phone.setError("Required Field");
+                }
+                else{
+                    saveUserInformation();
+                }            }
         });
   spinner_age = ArrayAdapter.createFromResource(getActivity(),R.array.age, android.R.layout.simple_spinner_item);
         spinner_gender = ArrayAdapter.createFromResource(getActivity(),R.array.gender, android.R.layout.simple_spinner_item);
@@ -132,6 +143,13 @@ public class EditProfile extends Fragment {
         selectSpinnerValue(profile_gender,gender_x);
         selectSpinnerValue(profile_lvl,lvl_x);
         selectSpinnerValue(profile_event,event_x);
+        
+        Bundle bundle = this.getArguments();
+        if (bundle != null) {
+            type = bundle.getString("type", null);
+        }
+        title.setText(type);
+       
         return rootView;
     }
 
@@ -195,9 +213,7 @@ public class EditProfile extends Fragment {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful()){
-                                Toast.makeText(getActivity(),"UPDATED",Toast.LENGTH_LONG).show();
-                                Log.i("tyag","hereko3");
-                            }
+                                 }
                         }
                     });
         }
@@ -214,6 +230,18 @@ public class EditProfile extends Fragment {
         editor.putString("level", lvl);
         editor.putString("event_d", event);
         editor.commit();
+        
+         if(type=="Add Information"){
+            Fragment fragment=new HomeFragment();
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.replace(R.id.main_fragment, fragment);
+            ft.commit();        }
+        if(type=="Edit Profile"){
+            Fragment fragment=new Profile();
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.replace(R.id.main_fragment, fragment);
+            ft.commit();
+        }
 
     }
 
@@ -238,5 +266,10 @@ public class EditProfile extends Fragment {
             }
         }
     }
+    
+    private boolean isEmpty(EditText etText) {
+        return etText.getText().toString().trim().length() == 0;
+    }
+   
     
 }

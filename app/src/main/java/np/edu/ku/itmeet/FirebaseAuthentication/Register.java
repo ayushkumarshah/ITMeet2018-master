@@ -112,14 +112,14 @@ public class Register extends Fragment {
                 if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK){
 
                     // handle back button
-                    getActivity().getSupportFragmentManager().popBackStack();
+                    //getActivity().getSupportFragmentManager().popBackStack();
 
-                    /*Fragment fragment = new HomeFragment();
+                    Fragment fragment = new HomeFragment();
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
 
-                    ft.replace(R.id.news_frag, fragment);
+                    ft.replace(R.id.frag_register, fragment);
                     ft.addToBackStack("tag");
-                    ft.commit();*/
+                    ft.commit();
 
                     return true;
 

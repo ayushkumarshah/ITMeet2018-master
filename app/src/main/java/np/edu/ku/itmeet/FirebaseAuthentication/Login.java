@@ -184,6 +184,10 @@ public class Login extends Fragment {
                             ft.replace(R.id.main_fragment, fragment);
                             ft.commit();
                         }
+                        else{
+                            //display some message here
+                            Toast.makeText(getActivity(),"Incorrect email or password",Toast.LENGTH_LONG).show();
+                        }
                     }
                 });
 

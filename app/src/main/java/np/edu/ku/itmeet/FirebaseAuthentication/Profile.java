@@ -57,7 +57,7 @@ public class Profile extends Fragment {
         //if the user is not logged in
         //that means current user will return null
         if(mAuth.getCurrentUser() == null){
-            Fragment fragment=new Register();
+            Fragment fragment=new Login();
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.replace(R.id.main_fragment, fragment);
             Log.i("dasd","working");

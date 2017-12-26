@@ -51,6 +51,17 @@ public class EventRegistration extends Fragment {
 
     String[] value={"","","","","","","","","","","","","","","",""};
 
+    
+
+    String name_x;
+    String address_x;
+    String phone_x;
+    String email_x;
+    String age_x;
+    String gender_x;
+    String inst_x;
+    String lvl_x;
+    String event_x;
 
 
 
@@ -132,19 +143,79 @@ public class EventRegistration extends Fragment {
                 keys=event_constants.nephack_keys;
                 types=event_constants.nephack_types;
                 url=event_constants.nephack_url;
+                break;                        
+            case "data_local":
+                fields=event_constants.data_local_fields;
+                keys=event_constants.data_local_keys;
+                types=event_constants.data_local_types;
+                url=event_constants.data_local_url;
+                break;
+            case "googling":
+                fields=event_constants.googling_fields;
+                keys=event_constants.googling_keys;
+                types=event_constants.googling_types;
+                url=event_constants.googling_url;
+                break;
+            case "csgo":
+                fields=event_constants.csgo_fields;
+                keys=event_constants.csgo_keys;
+                types=event_constants.csgo_types;
+                url=event_constants.csgo_url;
+                break;
+            case "dota":
+                fields=event_constants.dota_fields;
+                keys=event_constants.dota_keys;
+                types=event_constants.dota_types;
+                url=event_constants.dota_url;
                 break;
         }
+        
+        
+        final SharedPreferences mSharedPreference= PreferenceManager.getDefaultSharedPreferences(getActivity());
+        name_x=(mSharedPreference.getString("name",null ));
+        address_x=(mSharedPreference.getString("address",null ));
+        phone_x=(mSharedPreference.getString("phone",null ));
+        age_x=(mSharedPreference.getString("age",null ));
+        email_x=(mSharedPreference.getString("email",null ));
+
+        gender_x=(mSharedPreference.getString("gender",null ));
+        inst_x=(mSharedPreference.getString("institution",null ));
+        lvl_x=(mSharedPreference.getString("level",null ));
+        event_x=(mSharedPreference.getString("event_d",null ));
+
+        
         generate();
 
-        root.findViewById(R.id.button_register).setOnClickListener(new View.OnClickListener() {
+           root.findViewById(R.id.button_register).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 registerValues();
-                postData();
+                if(required()){
+                    postData();}
             }
         });
 
         return root;
+    }
+    
+        private boolean required(){
+        boolean ck=true;
+        for(int i=0;i<16;i++){
+            if(fields[i].contains(" *")&&types[i]=="text"&&isEmpty(et.get(i))){
+                et.get(i).setError("This is a required field");
+//                        Toast.makeText(getActivity(),"This is a required field  " +value[0],Toast.LENGTH_LONG).show();
+                ck=false;
+            }
+            if(fields[i].contains(" *")&&types[i]=="text"&&!isEmpty(et.get(i))){
+                ck=true;
+            }
+
+        }
+        return ck;
+    }
+
+    private boolean isEmpty(EditText etText) {
+        return etText.getText().toString().trim().length() == 0;
     }
 
     @Override
@@ -264,35 +335,47 @@ public class EventRegistration extends Fragment {
                         case "Are you attending the Alumni Meet? *":
                             spinnerInt(R.array.yn);
                             break;
-                        case "Project Theme":
+                        case "Project Theme *":
                             spinnerInt(R.array.project_theme);
                             break;
-                        case "Gender":
+                        case "Gender *":
                             spinnerInt(R.array.gender);
                             break;
-                        case "Age":
+                        case "Age *":
                             spinnerInt(R.array.age);
                             break;
-                        case "Are you a ?":
+                        case "Are you a ? *":
                             spinnerInt(R.array.level);
                             break;
-                        case "Do you have any previous job experience?":
+                        case "Do you have any previous job experience? *":
                             spinnerInt(R.array.experience);
                             break;
-                        case "What do you think is suitable for you to work on?":
+                        case "What do you think is suitable for you to work on? *":
                             spinnerInt(R.array.work);
                             break;
                         case "How did you hear about this event?":
                             spinnerInt(R.array.hear);
                             break;
                         case "Education Background":
-                            spinnerInt(R.array.ed);spinner = ArrayAdapter.createFromResource(getActivity(), R.array.ed, android.R.layout.simple_spinner_item);
+                            spinnerInt(R.array.ed);
                             break;
                         case "Platform(s) you are likely to use":
                             spinnerInt(R.array.design);
                             break;
-                        case "How do you catagorize yourself ?":
+                        case "How do you catagorize yourself ? *":
                             spinnerInt(R.array.cat);
+                            break;
+                        case "What is your preference? *":
+                            spinnerInt(R.array.data_local);
+                            break;
+                        case "Does your team have steam account? *":
+                            spinnerInt(R.array.yn);
+                            break;
+                        case "Payment Type *":
+                            spinnerInt(R.array.payment_type);
+                            break;
+                        case "Location of payment":
+                            spinnerInt(R.array.payment);
                             break;
                     }
                     spinner.setDropDownViewResource(android.R.layout.simple_spinner_item);
@@ -300,7 +383,11 @@ public class EventRegistration extends Fragment {
                     break;
             }
         }
-    }}
+    }
+    
+        getDefaults();
+    
+    }
 
 
     public void spinnerInt(int id){
@@ -320,6 +407,55 @@ public class EventRegistration extends Fragment {
             sp.add((Spinner) root.findViewById(spid[i]));
         }
     }
+    
+    
+    private void getDefaults(){
+        for(int i=0;i<16;i++){
+            if(fields[i].contains("Your Name ")){
+                et.get(i).setText(name_x);
 
+            }
+            if(fields[i].contains("Contact Number")){
+                et.get(i).setText(phone_x);
+
+            }
+            if(fields[i].contains("Email ")){
+                et.get(i).setText(email_x);
+
+            }
+            if(fields[i].contains("Address ")){
+                et.get(i).setText(address_x);
+            }
+            if(fields[i].contains("College ")){
+                et.get(i).setText(inst_x);
+            }
+            if(fields[i].contains("Age ")){
+                selectSpinnerValue(sp.get(i),age_x);
+            }
+            if(fields[i].contains("Gender ")){
+                selectSpinnerValue(sp.get(i),gender_x);
+            }
+            if(fields[i].contains("Level ")){
+                selectSpinnerValue(sp.get(i),lvl_x);
+            }
+            if(fields[i].contains("How did you hear about this event?")){
+                et.get(i).setText(event_x);
+            }
+
+
+        }
+    }
+
+    
+private void selectSpinnerValue(Spinner spinner, String myString)
+    {
+        int index = 0;
+        for(int i = 0; i < spinner.getCount(); i++){
+            if(spinner.getItemAtPosition(i).toString().equals(myString)){
+                spinner.setSelection(i);
+                break;
+            }
+        }
+    }
 
 }

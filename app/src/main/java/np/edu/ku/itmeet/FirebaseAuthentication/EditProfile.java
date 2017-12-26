@@ -45,12 +45,15 @@ public class EditProfile extends Fragment {
     DatabaseReference usersDB;
 
     ImageView imageView;
-    EditText profile_name,profile_email,profile_phone,profile_adddress;
+    EditText profile_name,profile_email,profile_phone,profile_adddress,profile_inst;
     Button save_button,delete_button;
+    Spinner profile_age,profile_gender,profile_event,profile_lvl;
     private ProgressBar progressBar;
     String proS;
     FirebaseAuth mAuth;
     FirebaseUser user;
+
+    ArrayAdapter<CharSequence> spinner_age,spinner_gender,spinner_lvl,spinner_event;
     public EditProfile() {
         // Required empty public constructor
     }
@@ -62,11 +65,19 @@ public class EditProfile extends Fragment {
         // Inflate the layout for this fragment
         View rootView=inflater.inflate(R.layout.fragment_edit, container, false);
         imageView=rootView.findViewById(R.id.edit_profile_image);
-        profile_name =rootView.findViewById(R.id.edit_profile_name);
+            profile_name =rootView.findViewById(R.id.edit_profile_name);
         profile_email =rootView.findViewById(R.id.edit_profile_email);
         profile_phone =rootView.findViewById(R.id.edit_profile_phone);
         profile_adddress=rootView.findViewById(R.id.edit_profile_address);
+        profile_inst=rootView.findViewById(R.id.edit_profile_inst);
+
+
+        profile_age=rootView.findViewById(R.id.spinner_profile_age);
+        profile_gender=rootView.findViewById(R.id.spinner_profile_gender);
+        profile_event=rootView.findViewById(R.id.spinner_profile_events);
+        profile_lvl=rootView.findViewById(R.id.spinner_profile_lvl);
         save_button=rootView.findViewById(R.id.button_save_profile);
+
 
         usersDB = FirebaseDatabase.getInstance().getReference("usersDB");
 
@@ -82,18 +93,43 @@ public class EditProfile extends Fragment {
                 saveUserInformation();
             }
         });
+  spinner_age = ArrayAdapter.createFromResource(getActivity(),R.array.age, android.R.layout.simple_spinner_item);
+        spinner_gender = ArrayAdapter.createFromResource(getActivity(),R.array.gender, android.R.layout.simple_spinner_item);
+        spinner_lvl = ArrayAdapter.createFromResource(getActivity(),R.array.ed, android.R.layout.simple_spinner_item);
+        spinner_event = ArrayAdapter.createFromResource(getActivity(),R.array.event_d, android.R.layout.simple_spinner_item);
+
+        spinner_age.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner_gender.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner_lvl.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner_event.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        profile_age.setAdapter(spinner_age);
+        profile_gender.setAdapter(spinner_gender);
+        profile_event.setAdapter(spinner_event);
+        profile_lvl.setAdapter(spinner_lvl);
 
         final SharedPreferences mSharedPreference= PreferenceManager.getDefaultSharedPreferences(getActivity());
+
+
+
         String name_x=(mSharedPreference.getString("name",null ));
         String address_x=(mSharedPreference.getString("address",null ));
         String phone_x=(mSharedPreference.getString("phone",null ));
+        String age_x=(mSharedPreference.getString("age",null ));
+        String gender_x=(mSharedPreference.getString("gender",null ));
+        String inst_x=(mSharedPreference.getString("institution",null ));
+        String lvl_x=(mSharedPreference.getString("level",null ));
+        String event_x=(mSharedPreference.getString("event_d",null ));
 
 
-            profile_name.setText(name_x);
-            profile_email.setText(user.getEmail());
-            profile_adddress.setText(address_x);
-            profile_phone.setText(phone_x);
-
+        profile_name.setText(name_x);
+        profile_email.setText(user.getEmail());
+        profile_adddress.setText(address_x);
+        profile_phone.setText(phone_x);
+        profile_inst.setText(inst_x);
+        selectSpinnerValue(profile_age,age_x);
+        selectSpinnerValue(profile_gender,gender_x);
+        selectSpinnerValue(profile_lvl,lvl_x);
+        selectSpinnerValue(profile_event,event_x);
         return rootView;
     }
 
@@ -128,11 +164,18 @@ public class EditProfile extends Fragment {
     }
 
     private void saveUserInformation() {
-        String username= profile_name.getText().toString();
+       String username= profile_name.getText().toString();
         String phone=profile_phone.getText().toString();
         String address=profile_adddress.getText().toString();
+        String institution=profile_inst.getText().toString();
+
         String email=user.getEmail();
         String id= user.getUid();
+        String age=profile_age.getSelectedItem().toString();
+        String gender=profile_gender.getSelectedItem().toString();
+        String lvl=profile_lvl.getSelectedItem().toString();
+        String event=profile_event.getSelectedItem().toString();
+
 
 
         UserDetails userinfo=new UserDetails(id,username,address,phone,email);
@@ -157,15 +200,18 @@ public class EditProfile extends Fragment {
                     });
         }
 
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+      SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("name", username);
         editor.putString("email", email);
         editor.putString("address", address);
         editor.putString("phone", phone);
-                editor.commit();
-
-
+        editor.putString("age", age);
+        editor.putString("gender", gender);
+        editor.putString("institution", institution);
+        editor.putString("level", lvl);
+        editor.putString("event_d", event);
+        editor.commit();
 
     }
 
@@ -180,4 +226,15 @@ public class EditProfile extends Fragment {
         }
     }
 
+        private void selectSpinnerValue(Spinner spinner, String myString)
+    {
+        int index = 0;
+        for(int i = 0; i < spinner.getCount(); i++){
+            if(spinner.getItemAtPosition(i).toString().equals(myString)){
+                spinner.setSelection(i);
+                break;
+            }
+        }
+    }
+    
 }

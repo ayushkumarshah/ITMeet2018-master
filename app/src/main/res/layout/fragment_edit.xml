@@ -1,24 +1,30 @@
-<FrameLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/frag_edit_profile">
-
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-
+    android:id="@+id/frag_edit_profile"
     tools:context="np.edu.ku.itmeet.FirebaseAuthentication.EditProfile"
     tools:layout_editor_absoluteY="25dp">
 
     <!-- TODO: Update blank fragment layout -->
 
 
-
-
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="345dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Edit Profile"
+        android:textAppearance="@android:style/TextAppearance.Material.Title"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
         android:id="@+id/progressBarx"
@@ -29,115 +35,312 @@
         app:layout_constraintBottom_toTopOf="@+id/edit_profile_image"
         app:layout_constraintEnd_toStartOf="@+id/edit_profile_image"
         app:layout_constraintStart_toStartOf="@+id/edit_profile_image"
-        app:layout_constraintTop_toTopOf="@+id/edit_profile_image" />
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <ImageView
         android:id="@+id/edit_profile_image"
         android:layout_width="1dp"
-        android:layout_height="1dp"
+        android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="119dp"
         android:src="@drawable/avatar"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_save_profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/progressBarx" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="27dp"
-        android:text="Name"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/edit_profile_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="17dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Enter your name"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="466dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_save_profile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.0">
 
-    <EditText
-        android:id="@+id/edit_profile_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/edit_profile_name"
-        app:layout_constraintEnd_toStartOf="@+id/edit_profile_name"
-        app:layout_constraintStart_toStartOf="@+id/edit_profile_name"
-        app:layout_constraintTop_toBottomOf="@+id/edit_profile_name" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edit_profile_phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter your phone number"
-        android:inputType="phone"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="@+id/edit_profile_email"
-        app:layout_constraintTop_toBottomOf="@+id/edit_profile_email" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edit_profile_address"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:hint="Enter your address"
-        android:inputType="textPersonName"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="@+id/edit_profile_phone"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details"
+                    android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="60dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="183dp" />
+
+                    <EditText
+                        android:id="@+id/edit_profile_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:ems="10"
+                        android:hint="Enter your name"
+                        android:inputType="textPersonName"
+                        android:shadowColor="#000000"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorHint="#000000"
+                        android:textColorLink="#000000"
+                        tools:layout_editor_absoluteX="153dp"
+
+                        tools:layout_editor_absoluteY="169dp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="301dp" />
+
+                    <EditText
+                        android:id="@+id/edit_profile_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:ems="10"
+                        android:hint="Enter your address"
+                        android:inputType="textPersonName"
+                        android:shadowColor="#000000"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorHint="#000000"
+                        android:textColorLink="#000000"
+                        tools:layout_editor_absoluteX="153dp"
+                        tools:layout_editor_absoluteY="277dp" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <EditText
+                        android:id="@+id/edit_profile_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:ems="10"
+                        android:hint="Enter your phone number"
+                        android:inputType="phone"
+                        android:shadowColor="#000000"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorHint="#000000"
+                        android:textColorLink="#000000"
+                        tools:layout_editor_absoluteX="153dp"
+                        tools:layout_editor_absoluteY="224dp" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Age"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_profile_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="239dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_profile_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000" />
+
+                    <EditText
+                        android:id="@+id/edit_profile_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:shadowColor="#000000"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorHint="#000000"
+                        android:textColorLink="#000000"
+                        android:visibility="gone"
+                        tools:layout_editor_absoluteX="116dp"
+                        tools:layout_editor_absoluteY="202dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Educational Details"
+                    android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="357dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Institution (if Relevant)"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="397dp" />
+
+                    <EditText
+                        android:id="@+id/edit_profile_inst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#000000"
+                        android:ems="10"
+                        android:hint="Institution(if Relevant)"
+                        android:inputType="textPersonName"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorHint="#000000"
+                        android:textColorLink="#000000"
+                        tools:layout_editor_absoluteX="134dp"
+                        tools:layout_editor_absoluteY="397dp" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Educational Level"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="397dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_profile_lvl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+                    android:textColor="#000000"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="357dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="How did you hear about this event?"
+                        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+                        android:textColor="#000000"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="397dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_profile_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/colorControlHighlight"
+                        android:backgroundTint="#000000" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/button_save_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Phone Number"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:textColor="#000000"
-        app:layout_constraintBaseline_toBaselineOf="@+id/edit_profile_phone"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="21dp"
-        android:text="Address"
-        android:textAppearance="@android:style/TextAppearance.Material.Medium"
-        android:textColor="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
 
 </android.support.constraint.ConstraintLayout>
-
-</FrameLayout>

@@ -83,7 +83,7 @@ public class EditProfile extends Fragment {
         profile_lvl=rootView.findViewById(R.id.spinner_profile_lvl);
         save_button=rootView.findViewById(R.id.button_save_profile);
 
-        title=rootView.findViewById(R.id.edit_profile_title);
+        title=rootView.findViewById(R.id.textView10);
 
 
         usersDB = FirebaseDatabase.getInstance().getReference("usersDB");

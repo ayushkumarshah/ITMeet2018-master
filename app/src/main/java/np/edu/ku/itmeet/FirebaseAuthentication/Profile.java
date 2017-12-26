@@ -37,6 +37,8 @@ public class Profile extends Fragment {
     TextView profileEmail;
     TextView profileAddress;
     TextView profilePhone;
+    TextView profileAge,profileGender,profileIns,profileLvl,profileEvent;
+
     public Profile() {
         // Required empty public constructor
     }
@@ -63,11 +65,17 @@ public class Profile extends Fragment {
         }
         else{
 
+       
         //initializing views
-        profileName =rootView.findViewById(R.id.profile_name);
-        profileEmail = (TextView) rootView.findViewById(R.id.profile_email);
-        profileAddress = (TextView) rootView.findViewById(R.id.profile_address);
-        profilePhone = (TextView) rootView.findViewById(R.id.profile_phone);
+            profileName =rootView.findViewById(R.id.profile_name);
+            profileEmail = (TextView) rootView.findViewById(R.id.profile_email);
+            profileAddress = (TextView) rootView.findViewById(R.id.profile_address);
+            profilePhone = (TextView) rootView.findViewById(R.id.profile_phone);
+            profileAge = (TextView) rootView.findViewById(R.id.profile_age);
+            profileGender= (TextView) rootView.findViewById(R.id.profile_gender);
+            profileIns = (TextView) rootView.findViewById(R.id.profile_inst);
+            profileLvl = (TextView) rootView.findViewById(R.id.profile_lvl);
+            profileEvent = (TextView) rootView.findViewById(R.id.profile_event);
         buttonLogout = (Button) rootView.findViewById(R.id.button_logout);
 
 
@@ -77,13 +85,22 @@ public class Profile extends Fragment {
             String name_x=(mSharedPreference.getString("name",null ));
             String address_x=(mSharedPreference.getString("address",null ));
             String phone_x=(mSharedPreference.getString("phone",null ));
+            String age_x=(mSharedPreference.getString("age",null ));
+            String gender_x=(mSharedPreference.getString("gender",null ));
+            String inst_x=(mSharedPreference.getString("institution",null ));
+            String lvl_x=(mSharedPreference.getString("level",null ));
+            String event_x=(mSharedPreference.getString("event_d",null ));
 
 
             profileName.setText(name_x);
             profileEmail.setText(user.getEmail());
             profileAddress.setText(address_x);
             profilePhone.setText(phone_x);
-
+            profileIns.setText(inst_x);
+            profileAge.setText(age_x);
+            profileGender.setText(gender_x);
+            profileLvl.setText(lvl_x);
+            profileEvent.setText(event_x);
 
 
 

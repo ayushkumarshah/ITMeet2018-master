@@ -117,7 +117,10 @@ public class Profile extends Fragment {
         rootView.findViewById(R.id.edit_profile).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                final Bundle bundle = new Bundle();
+                bundle.putString("type", "Edit Profile");
                 Fragment fragment=new EditProfile();
+                fragment.setArguments(bundle);
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
                 ft.replace(R.id.main_fragment, fragment);
                 ft.commit();

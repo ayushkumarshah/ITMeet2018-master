@@ -68,8 +68,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         itemHome     = new ResideMenuItem(this, R.drawable.icon_home,     "Home");
         itemNews  = new ResideMenuItem(this, R.drawable.icon_news,  "News");
         itemEvents  = new ResideMenuItem(this, R.drawable.icon_events,  "Events");
-        itemEventsReg  = new ResideMenuItem(this, R.drawable.accountplus,  "Events Registration");
-        itemProfile = new ResideMenuItem(this, R.drawable.face,  "Profile");
+        itemEventsReg  = new ResideMenuItem(this, R.drawable.accountplus,  "Register");
+        itemProfile = new ResideMenuItem(this, R.drawable.icon_profile,  "Profile");
         itemShare = new ResideMenuItem(this, R.drawable.icon_share, "Share");
         itemVisit = new ResideMenuItem(this, R.drawable.icon_visit, "Visit Us");
         itemAbout = new ResideMenuItem(this, R.drawable.icon_about, "About Us");

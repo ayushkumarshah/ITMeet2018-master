@@ -76,15 +76,15 @@
                         android:id="@+id/password_register"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="#000"
+                        android:backgroundTint="#000000"
                         android:drawableLeft="@drawable/lock"
                         android:drawableTint="#000"
                         android:hint="Password"
-                        android:inputType="numberPassword"
+                        android:inputType="textPassword"
                         android:maxLines="1"
                         android:singleLine="true"
-                        android:textColorHint="#000000"
-                        android:backgroundTint="#000000"/>
+                        android:textColor="#000"
+                        android:textColorHint="#000000" />
                 </android.support.design.widget.TextInputLayout>
 
                 <Button

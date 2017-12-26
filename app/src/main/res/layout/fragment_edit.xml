@@ -310,7 +310,7 @@
                     android:padding="10dp">
 
                     <TextView
-                        android:id="@+id/textView13"
+                        android:id="@+id/textView17"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="How did you hear about this event?"

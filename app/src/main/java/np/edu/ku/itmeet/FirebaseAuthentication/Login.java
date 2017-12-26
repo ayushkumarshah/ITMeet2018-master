@@ -30,7 +30,7 @@ import np.edu.ku.itmeet.R;
  */
 public class Login extends Fragment {
     //defining views
-    private Button buttonSignIn;
+    private Button buttonSignIn,skip;
     private EditText editTextEmail;
     private EditText editTextPassword;
     private TextView textViewSignup;
@@ -69,6 +69,7 @@ public class Login extends Fragment {
         editTextEmail = (EditText) rootView.findViewById(R.id.email_login);
         editTextPassword = (EditText) rootView.findViewById(R.id.password_login);
         buttonSignIn = (Button) rootView.findViewById(R.id.button_login);
+        skip = (Button) rootView.findViewById(R.id.skip_login);
         textViewSignup  = (TextView) rootView.findViewById(R.id.no_acount);
 
         progressDialog = new ProgressDialog(getActivity());
@@ -77,6 +78,18 @@ public class Login extends Fragment {
             @Override
             public void onClick(View view) {
                 userLogin();
+            }
+        });
+
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new HomeFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+
+                ft.replace(R.id.frag_login, fragment);
+                ft.addToBackStack("tag");
+                ft.commit();
             }
         });
 

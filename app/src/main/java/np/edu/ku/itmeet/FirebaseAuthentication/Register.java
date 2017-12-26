@@ -30,7 +30,7 @@ public class Register extends Fragment {
     private EditText editTextEmail;
     private EditText editTextPassword;
     private FirebaseAuth firebaseAuth;
-    private Button buttonSignup;
+    private Button buttonSignup,skip;
     private ProgressDialog progressDialog;
     private TextView textViewSignin;
     public Register() {
@@ -51,6 +51,7 @@ public class Register extends Fragment {
         editTextPassword = (EditText) rootView.findViewById(R.id.password_register);
 
         buttonSignup = (Button) rootView.findViewById(R.id.button_register);
+        skip = (Button) rootView.findViewById(R.id.skip_register);
 
         progressDialog = new ProgressDialog(getActivity());
 
@@ -60,6 +61,17 @@ public class Register extends Fragment {
             public void onClick(View view) {
                 //calling register method on click
                 registerUser();
+            }
+        });
+
+        skip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new HomeFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.frag_register, fragment);
+                ft.addToBackStack("tag");
+                ft.commit();
             }
         });
 

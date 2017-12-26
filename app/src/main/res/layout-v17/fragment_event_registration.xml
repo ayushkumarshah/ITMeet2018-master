@@ -1,20 +1,32 @@
-<FrameLayout android:layout_width="match_parent"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frag_event_registration"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    android:id="@+id/frag_event_registration"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:visibility="visible">
 
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:background="#fff"
-
         android:layout_height="match_parent"
+
+        android:background="#fff"
+        android:visibility="visible"
         tools:context="np.edu.ku.itmeet.EventRegistration">
 
         <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/registration_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:textColor="#000000"
+            android:textSize="24sp" />
 
         <Button
             android:id="@+id/button_register"
@@ -23,43 +35,68 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:text="Register" />
+            android:text="Register"
+            android:visibility="visible" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="55dp">
+            android:layout_below="@+id/registration_title"
+            android:layout_above="@+id/button_register"
+
+            android:visibility="visible">
 
             <LinearLayout
                 android:id="@+id/linear_main"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="visible">
 
                 <LinearLayout
                     android:id="@+id/lm0"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t0"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l0"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s0"
@@ -72,7 +109,7 @@
 
                         <EditText
                             android:id="@+id/e0"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -87,24 +124,44 @@
                 <LinearLayout
                     android:id="@+id/lm1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t1"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l1"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s1"
@@ -117,7 +174,7 @@
 
                         <EditText
                             android:id="@+id/e1"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -132,24 +189,44 @@
                 <LinearLayout
                     android:id="@+id/lm2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t2"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l2"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s2"
@@ -162,7 +239,7 @@
 
                         <EditText
                             android:id="@+id/e2"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -177,24 +254,44 @@
                 <LinearLayout
                     android:id="@+id/lm3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t3"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l3"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s3"
@@ -207,7 +304,7 @@
 
                         <EditText
                             android:id="@+id/e3"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -222,24 +319,44 @@
                 <LinearLayout
                     android:id="@+id/lm4"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t4"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l4"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s4"
@@ -252,7 +369,7 @@
 
                         <EditText
                             android:id="@+id/e4"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -267,24 +384,44 @@
                 <LinearLayout
                     android:id="@+id/lm5"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t5"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l5"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s5"
@@ -297,7 +434,7 @@
 
                         <EditText
                             android:id="@+id/e5"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -312,24 +449,44 @@
                 <LinearLayout
                     android:id="@+id/lm6"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t6"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l6"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s6"
@@ -342,7 +499,7 @@
 
                         <EditText
                             android:id="@+id/e6"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -357,24 +514,44 @@
                 <LinearLayout
                     android:id="@+id/lm7"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t7"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l7"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s7"
@@ -387,7 +564,7 @@
 
                         <EditText
                             android:id="@+id/e7"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -402,24 +579,44 @@
                 <LinearLayout
                     android:id="@+id/lm8"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t8"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l8"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s8"
@@ -432,7 +629,7 @@
 
                         <EditText
                             android:id="@+id/e8"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -447,24 +644,44 @@
                 <LinearLayout
                     android:id="@+id/lm9"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t9"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l9"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s9"
@@ -477,7 +694,7 @@
 
                         <EditText
                             android:id="@+id/e9"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -492,24 +709,44 @@
                 <LinearLayout
                     android:id="@+id/lm10"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t10"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l10"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s10"
@@ -522,7 +759,7 @@
 
                         <EditText
                             android:id="@+id/e10"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -537,24 +774,44 @@
                 <LinearLayout
                     android:id="@+id/lm11"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t11"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l11"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s11"
@@ -567,7 +824,7 @@
 
                         <EditText
                             android:id="@+id/e11"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -582,24 +839,44 @@
                 <LinearLayout
                     android:id="@+id/lm12"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t12"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l12"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s12"
@@ -612,7 +889,7 @@
 
                         <EditText
                             android:id="@+id/e12"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -627,24 +904,44 @@
                 <LinearLayout
                     android:id="@+id/lm13"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t13"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l13"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s13"
@@ -657,7 +954,7 @@
 
                         <EditText
                             android:id="@+id/e13"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -672,24 +969,44 @@
                 <LinearLayout
                     android:id="@+id/lm14"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t14"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l14"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s14"
@@ -702,7 +1019,7 @@
 
                         <EditText
                             android:id="@+id/e14"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -717,24 +1034,44 @@
                 <LinearLayout
                     android:id="@+id/lm15"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="4dp"
                     android:visibility="gone">
 
-                    <TextView
-                        android:id="@+id/t15"
-                        android:layout_width="100dp"
+                    <LinearLayout
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="#000000" />
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/t15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/th15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@android:style/TextAppearance.Small"
+                            android:textColor="#000000"
+                            android:textSize="8sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/l15"
                         android:layout_width="222dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal">
+                        android:orientation="horizontal"
+                        android:visibility="visible">
 
                         <Spinner
                             android:id="@+id/s15"
@@ -747,7 +1084,7 @@
 
                         <EditText
                             android:id="@+id/e15"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="#000000"
@@ -763,5 +1100,7 @@
 
             </LinearLayout>
         </ScrollView>
+
     </RelativeLayout>
+
 </FrameLayout>

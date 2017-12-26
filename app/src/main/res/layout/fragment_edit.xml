@@ -12,13 +12,13 @@
 
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/edit_profile_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="345dp"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="Edit Profile"
+        android:text="Profile Management"
         android:textAppearance="@android:style/TextAppearance.Material.Title"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/progressBarx"

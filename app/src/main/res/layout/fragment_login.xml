@@ -81,9 +81,8 @@
 
         <Button
             android:id="@+id/skip_login"
-            style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="16dp"
             android:background="#55895a"
             android:text="SKIP"

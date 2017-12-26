@@ -23,6 +23,9 @@ public class NewsDatabase extends SQLiteOpenHelper {
     public static final String COL_1 = "title";
     public static final String COL_2 = "date";
     public static final String COL_3 = "content";
+    public static final String COL_4 = "link";
+
+
 
     private Activity context;
 
@@ -48,7 +51,8 @@ public class NewsDatabase extends SQLiteOpenHelper {
         SQL_CREATE_TABLE_NAME = "CREATE TABLE " + NewsDatabase.TABLE_NAME + " (" +
                 NewsDatabase.COL_1 + " TEXT NOT NULL, " +
                 NewsDatabase.COL_2 + " TEXT NOT NULL, " +
-                NewsDatabase.COL_3 + " TEXT NOT NULL " +
+                NewsDatabase.COL_3 + " TEXT NOT NULL, " +
+                NewsDatabase.COL_4 + " TEXT NOT NULL " +
                 " )";
         db.execSQL(SQL_CREATE_TABLE_NAME);
 
@@ -78,6 +82,7 @@ public class NewsDatabase extends SQLiteOpenHelper {
             contentValues.put(COL_1, information.getJSONObject(COL_1).getString("rendered"));
             contentValues.put(COL_2, information.getString(COL_2));
             contentValues.put(COL_3, information.getJSONObject(COL_3).getString("rendered"));
+            contentValues.put(COL_4, information.getString(COL_4));
             Log.v("iamat", "insertData");
         } catch (JSONException e) {
             Log.v("Error", "Database JsonException");

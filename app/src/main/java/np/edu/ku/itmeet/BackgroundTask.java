@@ -39,12 +39,13 @@ ListView listView;
             newsAdapter=new NewsAdapter(ctx,R.layout.list_single);
             SQLiteDatabase db=myDB.getReadableDatabase();
             Cursor cursor=myDB.getInfo(db);
-            String title,date,content;
+            String title,date,content,link;
             while (cursor.moveToNext()) {
                 title = cursor.getString(cursor.getColumnIndex(NewsDatabase.COL_1));
                 date = cursor.getString(cursor.getColumnIndex(NewsDatabase.COL_2));
                 content = cursor.getString(cursor.getColumnIndex(NewsDatabase.COL_3));
-                News news=new News(title,date,content);
+                link = cursor.getString(cursor.getColumnIndex(NewsDatabase.COL_4));
+                News news=new News(title,date,content,link);
                 publishProgress(news);
 
             }

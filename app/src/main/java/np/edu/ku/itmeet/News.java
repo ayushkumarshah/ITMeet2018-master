@@ -5,11 +5,13 @@ package np.edu.ku.itmeet;
  */
 
 public class News {
-    private  String content,date,title;
-    public News(String title, String date, String content){
+    private  String content,date,title,link;
+    public News(String title, String date, String content,String link){
         this.content=content;
         this.date=date;
         this.title=title;
+        this.link=link;
+
 
     }
     public  String getTitle()
@@ -23,6 +25,10 @@ public class News {
     public String getContent()
     {
         return  content;
+    }
+    public String getLink()
+    {
+        return  link;
     }
 
 }

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.Html;
+import android.text.Spannable;
 import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -68,8 +69,21 @@ public class NewsAdapter extends ArrayAdapter {
         News news=(News)getItem(position);
         newsHolder.Title.setText(news.getTitle());
         newsHolder.Date.setText(news.getDate());
-        newsHolder.Content.setText(Html.fromHtml(news.getContent().replaceAll("<img.+?>", "")));
+        String url;
+        url=news.getLink();
+        url="<a href=\""+url+"\">"+url+"</a>";
+        PicassoImageGetter imageGetter = new PicassoImageGetter(newsHolder.Content,getContext());
+        Spannable html;
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+            html = (Spannable) Html.fromHtml(news.getContent()+"<br>Source :"+url, Html.FROM_HTML_MODE_LEGACY, imageGetter, null);
+        } else {
+            html = (Spannable) Html.fromHtml(news.getContent()+"<br>Source : "+url, imageGetter, null);
+        }
+        newsHolder.Content.setText(html);
+
         newsHolder.Content.setMovementMethod(LinkMovementMethod.getInstance());
+        /*newsHolder.Content.setText(Html.fromHtml(news.getContent().replaceAll("<img.+?>", "")));
+        newsHolder.Content.setMovementMethod(LinkMovementMethod.getInstance());*/
         return row;
     }
 

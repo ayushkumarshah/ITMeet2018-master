@@ -94,5 +94,35 @@
         android:layout_alignStart="@+id/btn_design_comp"
         android:layout_below="@+id/btn_design_comp"
         android:text="NepHack" />
+    <Button
+                android:id="@+id/btn_data_local"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btn_nephack"
+                android:text="Datathon and Localization" />
+
+            <Button
+                android:id="@+id/btn_googling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/button2"
+                android:text="Googling" />
+
+            <Button
+                android:id="@+id/btn_csgo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CS:Go" />
+
+            <Button
+                android:id="@+id/btn_dota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dota 2" />
+    
 </RelativeLayout>
 </FrameLayout>

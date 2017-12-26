@@ -159,9 +159,11 @@ public class Register extends Fragment {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         //checking if success
                         if(task.isSuccessful()){
-                            //display some message here
+                             final Bundle bundle = new Bundle();
+                            bundle.putString("type", "Add Information");                            
                             Toast.makeText(getActivity(),"Successfully registered",Toast.LENGTH_LONG).show();
-                            Fragment fragment=new Profile();
+                             Fragment fragment=new EditProfile();
+                            fragment.setArguments(bundle);
                             FragmentTransaction ft = getFragmentManager().beginTransaction();
                             ft.replace(R.id.main_fragment, fragment);
                             ft.commit();

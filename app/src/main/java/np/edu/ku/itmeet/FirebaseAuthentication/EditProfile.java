@@ -180,7 +180,7 @@ public class EditProfile extends Fragment {
 
 
 
-        UserDetails userinfo=new UserDetails(id,username,address,phone,email);
+        UserDetails userinfo=new UserDetails(id,username,address,phone,email,age,gender,institution,lvl,event);
         usersDB.child(id).setValue(userinfo);
         Log.i("tyag","hereko");
 

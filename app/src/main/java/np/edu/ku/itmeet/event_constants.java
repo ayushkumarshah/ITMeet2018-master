@@ -97,6 +97,13 @@ public class event_constants {
     public final static String dota_url="https://docs.google.com/forms/d/e/1FAIpQLSdmukxliplG36BlqIgGEUJG3iNfVFcSCdx1QCbanyO553xt2A/formResponse" ;
 
 
+   public static final String project_demo_title="Project Demonstration";
+    public static final String[] project_demo_fields={"Email address *","Project Title *","Current Year *","Current Semester *","Team Leader *","Contact Number *","Email ID *","Abstract of the Project *","","","","","","","","","","","","",""};
+   public static final String[] project_demo_help={"","","","","","","","","","","","","","","","","","","","",""};
+   public static final String[] project_demo_keys={"emailAddress","entry.416579074","entry.1297446229","entry.524989447","entry.982881845","entry.1146474304","entry.1804629216","entry.1217872144","","","","","","","","","","","","",""};
+   public static final String[] project_demo_types={"text","text","text","text","text","text","text","text","","","","","","","","","","","","",""};
+           public static final String project_demo_url="https://docs.google.com/forms/d/e/1FAIpQLSdfsCXTrJb3jHJZZx0dhkpmBZKcYGtfI_IAB5fbnyDFIbworg/formResponse\"";
+//
 
 //
 //    public final static String[] _fields={};

@@ -202,6 +202,15 @@ public class EventRegistration extends Fragment {
                 types=event_constants.dota_types;
                 url=event_constants.dota_url;
                 break;
+                
+            case "project_demo":
+                title=event_constants.project_demo_title;
+                help=event_constants.project_demo_help;
+                fields=event_constants.project_demo_fields;
+                keys=event_constants.project_demo_keys;
+                types=event_constants.project_demo_types;
+                url=event_constants.project_demo_url;
+                break;  
         }
 
         title_l.setText(title+" Registration");

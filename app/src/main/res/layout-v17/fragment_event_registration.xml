@@ -14,7 +14,7 @@
 
         android:background="#fff"
         android:visibility="visible"
-        tools:context="np.edu.ku.itmeet.EventRegistration">
+        tools:context="np.edu.ku.itmeet18.EventRegistration">
 
         <!-- TODO: Update blank fragment layout -->
 

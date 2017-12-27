@@ -4,12 +4,12 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="np.edu.ku.itmeet.event_details"
+    tools:context="np.edu.ku.itmeet18.event_details"
     android:id="@+id/frag_event_details"
     android:background="#fff">
 
     <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -17,9 +17,27 @@
         android:paddingStart="16dp">
 
 
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:background="#55895a"
+            android:text="Register"
+            android:textAlignment="center" />
+
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="502dp">
+            android:layout_height="match_parent"
+            android:layout_above="@+id/register"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
@@ -57,13 +75,5 @@
 
             </android.support.constraint.ConstraintLayout>
         </ScrollView>
-
-        <Button
-            android:id="@+id/register"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Register"
-            android:background="#55895a"
-            android:textAlignment="center" />
-    </LinearLayout>
+    </RelativeLayout>
 </FrameLayout>

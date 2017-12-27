@@ -14,7 +14,7 @@
         android:scrollbarAlwaysDrawVerticalTrack="true"
         android:layout_gravity="center"
         android:fitsSystemWindows="true"
-        tools:context="np.edu.ku.itmeet.FirebaseAuthentication.Reset">
+        tools:context="np.edu.ku.itmeet18.FirebaseAuthentication.Reset">
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="30dp"

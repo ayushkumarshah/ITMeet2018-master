@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/events_frag"
-    tools:context="np.edu.ku.itmeet.HomeFragment"
+    tools:context="np.edu.ku.itmeet18.HomeFragment"
     android:background="#212121">
     <LinearLayout
         android:layout_width="match_parent"

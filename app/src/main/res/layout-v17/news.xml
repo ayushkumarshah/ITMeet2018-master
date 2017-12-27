@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/frag_news"
-    tools:context="np.edu.ku.itmeet.NewsFragment"
+    tools:context="np.edu.ku.itmeet18.NewsFragment"
     android:background="#fff">
     <ListView
         android:id="@+id/list2"

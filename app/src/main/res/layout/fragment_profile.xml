@@ -11,7 +11,7 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
 
-    tools:context="np.edu.ku.itmeet.FirebaseAuthentication.Profile"
+    tools:context="np.edu.ku.itmeet18.FirebaseAuthentication.Profile"
     android:orientation="vertical">
 
 

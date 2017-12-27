@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="np.edu.ku.itmeet">
+    package="np.edu.ku.itmeet18">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -16,7 +16,7 @@
         android:largeHeap="true"
 
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name="np.edu.ku.itmeet.MainActivity"
+        <activity android:name="np.edu.ku.itmeet18.MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,13 +27,13 @@
         </activity>
 
 
-        <service android:name=".FirebaseInst">
+        <service android:name="np.edu.ku.itmeet18.FirebaseInst">
                         <intent-filter>
                             <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
                         </intent-filter>
                     </service>
 
-                <service android:name=".MessageReceived">
+                <service android:name="np.edu.ku.itmeet18.MessageReceived">
                     <intent-filter>
                         <action android:name="com.google.firebase.MESSAGING_EVENT" />
                     </intent-filter>

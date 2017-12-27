@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="np.edu.ku.itmeet.HomeFragment"
+    tools:context="np.edu.ku.itmeet18.HomeFragment"
     android:background="#fff">
 
     <ScrollView

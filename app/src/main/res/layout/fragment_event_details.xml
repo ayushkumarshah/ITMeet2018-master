@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context="np.edu.ku.itmeet.event_details"
+    tools:context="np.edu.ku.itmeet18.event_details"
     android:id="@+id/frag_event_details"
     android:background="#fff">
 

@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "np.edu.ku.itmeet"
+        applicationId "np.edu.ku.itmeet18"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
@@ -17,8 +17,8 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled false
+
 
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/frag_login"
-    tools:context="np.edu.ku.itmeet.FirebaseAuthentication.Login"
+    tools:context="np.edu.ku.itmeet18.FirebaseAuthentication.Login"
     android:layout_gravity="center_horizontal">
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -138,14 +138,15 @@
             android:id="@+id/skip_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:layout_alignRight="@+id/relativeLayout"
             android:layout_below="@+id/relativeLayout"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="13dp"
-            android:background="#55895a"
-            android:text="Skip login"
-            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:text="SKIP >>"
             android:textAllCaps="false"
             android:textColor="#fff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 </FrameLayout>

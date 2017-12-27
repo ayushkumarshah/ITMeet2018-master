@@ -10,7 +10,7 @@
     android:background="#ffffff"
 
     android:padding="10dp"
-    tools:context="np.edu.ku.itmeet.registration">
+    tools:context="np.edu.ku.itmeet18.registration">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView

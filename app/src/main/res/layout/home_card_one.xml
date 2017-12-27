@@ -8,7 +8,7 @@
     android:foreground="?android:attr/selectableItemBackground"
     card_view:cardCornerRadius="4dp"
     card_view:cardElevation="2dp"
-    tools:context="np.edu.ku.itmeet.HomeFragment">
+    tools:context="np.edu.ku.itmeet18.HomeFragment">
 
         <android.support.v4.view.ViewPager
         android:id="@+id/pager"

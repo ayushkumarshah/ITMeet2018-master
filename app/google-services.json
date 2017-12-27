@@ -134,6 +134,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "584168201075-0v4k2iradmimov393gnglbf4ofb6l34q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "np.edu.ku.itmeet18",
+            "certificate_hash": "581ae535cb557295555c14b3979f95d05d678953"
+          }
+        },
+        {
           "client_id": "584168201075-tj4t5046mdulass6ohb320hiob870inv.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -148,8 +156,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "584168201075-tj4t5046mdulass6ohb320hiob870inv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

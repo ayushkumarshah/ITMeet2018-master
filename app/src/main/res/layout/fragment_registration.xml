@@ -131,6 +131,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dota 2" />
+            <Button
+                android:id="@+id/btn_project_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Demonstration" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

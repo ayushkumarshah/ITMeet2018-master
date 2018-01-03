@@ -61,6 +61,7 @@ public class EventsDatabase extends SQLiteOpenHelper {
     public void dropDatabase() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("delete from "+ TABLE_NAME);
+
     }
 
     public boolean insertData(JSONObject information) {
@@ -80,6 +81,7 @@ public class EventsDatabase extends SQLiteOpenHelper {
         }
 
         db.insert(TABLE_NAME, null, contentValues);
+        db.close();
         return true;
     }
 
@@ -122,7 +124,11 @@ public class EventsDatabase extends SQLiteOpenHelper {
         }
         else
             return "Sorry no data";
+
+
     }
+
+
 
 
 }

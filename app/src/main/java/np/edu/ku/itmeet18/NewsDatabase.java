@@ -57,7 +57,7 @@ public class NewsDatabase extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_TABLE_NAME);
 
         Log.v("databasecreated", "oncreate");
-        //db.close();
+
 
     }
 
@@ -70,7 +70,7 @@ public class NewsDatabase extends SQLiteOpenHelper {
     public void dropDatabase() {
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("delete from "+ TABLE_NAME);
-        //db.close();
+
     }
 
     public boolean insertData(JSONObject information) {
@@ -89,7 +89,8 @@ public class NewsDatabase extends SQLiteOpenHelper {
         }
         db.insert(TABLE_NAME, null, contentValues);
         Log.v("iamat", "onerowinserted");
-        //db.close();
+
+        db.close();
         return true;
     }
 
@@ -97,8 +98,6 @@ public class NewsDatabase extends SQLiteOpenHelper {
 
 
     public Cursor getInfo(SQLiteDatabase db) {
-        //String[] columns={COL_1,COL_2,COL_3};
-        //SQLiteDatabase database = this.getReadableDatabase();
         String SQL_READ_TABLE_NAME = "SELECT * FROM " + TABLE_NAME + " ORDER BY " + this.COL_2 +" DESC";
         Cursor cursor = db.rawQuery(SQL_READ_TABLE_NAME, null);
 

@@ -22,7 +22,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:gravity="center"
-            android:text="Our Sponsers"
+            android:text="Our Sponsors"
             android:textSize="20sp"
             android:background="#1e5f75 "/>
     </RelativeLayout>
@@ -203,17 +203,19 @@
                     android:background="@null"
                     android:src="@drawable/neo"/>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="125dp"
                 android:layout_height="50dp"
                 android:layout_marginBottom="2dp">
+
                 <ImageButton
                     android:id="@+id/leapfrog"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:scaleType="fitCenter"
                     android:background="@null"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/leapfrog" />
             </LinearLayout>
             <LinearLayout
@@ -297,6 +299,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="15sp"
             android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -305,83 +308,94 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
                 android:orientation="horizontal">
+
                 <LinearLayout
                     android:layout_width="175dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="2dp"
                     android:layout_marginLeft="5dp">
+
                     <ImageButton
                         android:id="@+id/ug"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:scaleType="fitCenter"
                         android:background="@null"
-                        android:src="@drawable/ug"/>
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ug" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="5dp">
+
                     <ImageButton
                         android:id="@+id/cynical"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:scaleType="fitCenter"
                         android:background="@null"
-                        android:src="@drawable/cynical"/>
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cynical" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
                 android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
                 android:orientation="horizontal">
+
                 <LinearLayout
                     android:layout_width="115dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="2dp"
                     android:layout_marginLeft="5dp">
+
                     <ImageButton
                         android:id="@+id/endeavor"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:scaleType="fitCenter"
                         android:background="@null"
-                        android:src="@drawable/endeavor"/>
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/endeavor" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="115dp"
                     android:layout_height="50dp"
                     android:layout_marginBottom="2dp">
+
                     <ImageButton
                         android:id="@+id/sunway"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:scaleType="fitCenter"
                         android:background="@null"
-                        android:src="@drawable/sunway"/>
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sunway" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginBottom="2dp"
                     android:layout_marginRight="5dp">
+
                     <ImageButton
                         android:id="@+id/es"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:scaleType="fitCenter"
                         android:background="@null"
+                        android:scaleType="fitCenter"
                         android:src="@drawable/es" />
                 </LinearLayout>
             </LinearLayout>
@@ -485,6 +499,160 @@
                     android:background="@null"
                     android:src="@drawable/cb"/>
             </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:background="#8DCED6"
+            android:text="VR Entertainment Partner"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp">
+                <ImageButton
+                    android:id="@+id/vr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/paracosma"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp"></LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:background="#8DCED6"
+            android:text="Career Partner                   Photography Partner"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp">
+                <ImageButton
+                    android:id="@+id/merojob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/merojob"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="5dp">
+                <ImageButton
+                    android:id="@+id/glam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    android:src="@drawable/glam"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
         </LinearLayout>
     </LinearLayout>
 

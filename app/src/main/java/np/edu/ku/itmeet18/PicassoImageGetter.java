@@ -30,6 +30,8 @@ public class PicassoImageGetter implements Html.ImageGetter {
         Picasso.with(context)
                 .load(source)
                 .placeholder(R.drawable.logo)
+                .resize(600,200)
+                .centerInside()
                 .into(drawable);
         return drawable;
     }

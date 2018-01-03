@@ -204,7 +204,50 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="#212121"
-                            android:text="Python Meetup"
+                            android:text="PYTHON MEETUP"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/expvr"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/expvr" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="EXPIERENCE VR"
+                            android:textAlignment="center" />
+
+                        <ImageView
+                            android:id="@+id/cleancode"
+                            android:layout_width="match_parent"
+                            android:layout_height="92dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/itmeet" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="CLEAN CODE TALK"
+                            android:textAlignment="center" />
+                        <ImageView
+                            android:id="@+id/movie"
+                            android:layout_width="match_parent"
+                            android:layout_height="92dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/movie" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="ALPHAGO MOVIE SCREENING"
                             android:textAlignment="center" />
                     </LinearLayout>
 
@@ -374,7 +417,42 @@
                             android:textAlignment="center" />
 
 
+                        <ImageView
+                            android:id="@+id/vrmeetup"
+                            android:layout_width="match_parent"
+                            android:layout_height="92dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/vrmeetup" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="VIRTUAL REALITY (VR) MEET UP"
+                            android:textAlignment="center" />
+
+
+
+                        <ImageView
+                            android:id="@+id/coding2"
+                            android:layout_width="match_parent"
+                            android:layout_height="92dp"
+                            android:background="@null"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/itmeet" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#212121"
+                            android:text="CODING COMPETITION"
+                            android:textAlignment="center" />
+
+
                     </LinearLayout>
+
+
                 </LinearLayout>
             </android.support.constraint.ConstraintLayout>
         </ScrollView>

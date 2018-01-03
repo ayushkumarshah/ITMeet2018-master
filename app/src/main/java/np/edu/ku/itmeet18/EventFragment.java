@@ -52,7 +52,7 @@ public class EventFragment extends Fragment implements View.OnClickListener {
         context = rootview.getContext();
         activity = getActivity();
 
-        ImageView Alumini,Blood,Career,Clash,Codecamp,Ltsp,Selfie,Python,Coding,Cs,Design,Dota,Fifa,Googling,Hackathon,Hwcomp,Ideapitch,Itquiz,Localization,Penetration,Photography,Projectdemo,Swcomp;
+        ImageView Alumini,Blood,Career,Clash,Codecamp,Ltsp,Selfie,Python,Coding,Cs,Design,Dota,Fifa,Googling,Hackathon,Hwcomp,Ideapitch,Itquiz,Localization,Penetration,Photography,Projectdemo,Swcomp,Vrmeetup,Movie,Expvr,Cleancode,Coding2;
 
         Alumini=(ImageView) rootview.findViewById(R.id.alumini);
         Alumini.setOnClickListener(this);
@@ -100,6 +100,17 @@ public class EventFragment extends Fragment implements View.OnClickListener {
         Projectdemo.setOnClickListener(this);
         Swcomp=(ImageView) rootview.findViewById(R.id.swcomp);
         Swcomp.setOnClickListener(this);
+        Vrmeetup=(ImageView) rootview.findViewById(R.id.vrmeetup);
+        Vrmeetup.setOnClickListener(this);
+        Expvr=(ImageView) rootview.findViewById(R.id.expvr);
+        Expvr.setOnClickListener(this);
+        Movie=(ImageView) rootview.findViewById(R.id.movie);
+        Movie.setOnClickListener(this);
+        Cleancode=(ImageView) rootview.findViewById(R.id.cleancode);
+        Cleancode.setOnClickListener(this);
+        Coding2=(ImageView) rootview.findViewById(R.id.coding2);
+        Coding2.setOnClickListener(this);
+
 
         if (CheckInternetConnection(context))
         {
@@ -292,6 +303,36 @@ public class EventFragment extends Fragment implements View.OnClickListener {
             case R.id.swcomp:
                 bundle.putString("name","Software Competition");
                 bundle.putString("id","128");
+                // do your code
+                break;
+
+            case R.id.vrmeetup:
+                bundle.putString("name","Software Competition");
+                bundle.putString("id","276");
+                // do your code
+                break;
+
+            case R.id.expvr:
+                bundle.putString("name","Software Competition");
+                bundle.putString("id","378");
+                // do your code
+                break;
+
+            case R.id.coding2:
+                bundle.putString("name","Software Competition");
+                bundle.putString("id","392");
+                // do your code
+                break;
+
+            case R.id.movie:
+                bundle.putString("name","Software Competition");
+                bundle.putString("id","366");
+                // do your code
+                break;
+
+            case R.id.cleancode:
+                bundle.putString("name","Software Competition");
+                bundle.putString("id","382");
                 // do your code
                 break;
 

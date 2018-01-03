@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View parentView = inflater.inflate(R.layout.home, container, false);
         context = parentView.getContext();
         activity = getActivity();
-        ImageButton verisk, yomari, neo, nta,gbd, sunway, doit,cynical, ekantipur, worldlink, ittn, ug, smartcell,leapfrog,logpoint,es,endeavor,cb, prime;
+        ImageButton verisk, yomari, neo, nta,gbd, sunway, doit,cynical, ekantipur, worldlink, ittn, ug, smartcell,leapfrog,logpoint,es,endeavor,cb, prime,vr,merojob,glam;
         verisk = (ImageButton) parentView.findViewById(R.id.verisk);
         verisk.setOnClickListener(this);
         smartcell = (ImageButton) parentView.findViewById(R.id.smartcell);
@@ -68,6 +68,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         prime.setOnClickListener(this);
         cynical = (ImageButton) parentView.findViewById(R.id.cynical);
         cynical.setOnClickListener(this);
+
+        vr = (ImageButton) parentView.findViewById(R.id.vr);
+        vr.setOnClickListener(this);
+
+        glam = (ImageButton) parentView.findViewById(R.id.glam);
+        glam.setOnClickListener(this);
+
+        merojob = (ImageButton) parentView.findViewById(R.id.merojob);
+        merojob.setOnClickListener(this);
+
         mCustomPagerAdapter = new CustomPagerAdapter(container.getContext());
 
         mViewPager = (ViewPager) parentView.findViewById(R.id.pager);
@@ -143,6 +153,18 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.prime:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.primefm.com.np/")));
+                break;
+
+            case R.id.vr:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://paracosma.com/")));
+                break;
+
+            case R.id.glam:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.glam7.com/")));
+                break;
+
+            case R.id.merojob:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://merojob.com/")));
                 break;
         }
     }

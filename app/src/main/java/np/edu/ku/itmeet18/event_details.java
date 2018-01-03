@@ -34,8 +34,14 @@ String title,content,id,url;
         View rootview= inflater.inflate(R.layout.fragment_event_details, container, false);
 
         Bundle bundle = this.getArguments();
-        title=bundle.getString("name");
+       // title=bundle.getString("name");
         id=bundle.getString("id");
+        EventsDatabase myDB=new EventsDatabase(getContext());
+
+        content=myDB.getContent(id);
+        title=myDB.getTitle(id);
+        url=myDB.getUrl(id);
+        url="<a href=\""+url+"\">"+url+"</a>";
         TextView Title,Content,Url;
          Title=(TextView)rootview.findViewById(R.id.title);
         Content=(TextView)rootview.findViewById(R.id.content);
@@ -60,12 +66,7 @@ String title,content,id,url;
 
         button.setOnClickListener(this);
 
-        EventsDatabase myDB=new EventsDatabase(getContext());
 
-        content=myDB.getContent(id);
-        title=myDB.getTitle(id);
-        url=myDB.getUrl(id);
-        url="<a href=\""+url+"\">"+url+"</a>";
 
         Title.setText(title);
 

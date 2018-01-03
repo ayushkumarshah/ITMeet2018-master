@@ -136,6 +136,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Project Demonstration" />
+            <Button
+                android:id="@+id/btn_itquiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IT Quiz" />
+            <Button
+                android:id="@+id/btn_vrmeet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VR MEET" />
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

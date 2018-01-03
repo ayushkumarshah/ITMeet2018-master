@@ -98,12 +98,27 @@ public class event_constants {
 
 
    public static final String project_demo_title="Project Demonstration";
-    public static final String[] project_demo_fields={"Email address *","Project Title *","Current Year *","Current Semester *","Team Leader *","Contact Number *","Email ID *","Abstract of the Project *","","","","","","","","","","","","",""};
-   public static final String[] project_demo_help={"","","","","","","","","","","","","","","","","","","","",""};
-   public static final String[] project_demo_keys={"emailAddress","entry.416579074","entry.1297446229","entry.524989447","entry.982881845","entry.1146474304","entry.1804629216","entry.1217872144","","","","","","","","","","","","",""};
-   public static final String[] project_demo_types={"text","text","text","text","text","text","text","text","","","","","","","","","","","","",""};
-           public static final String project_demo_url="https://docs.google.com/forms/d/e/1FAIpQLSdfsCXTrJb3jHJZZx0dhkpmBZKcYGtfI_IAB5fbnyDFIbworg/formResponse\"";
-//
+    public static final String[] project_demo_fields={"Email address *","Project Title *","College/University Name *","Department of *","Current Year *","Current Semester *","Team Leader *","Contact Number *","Abstract of the Project *","","","","","","","","","","","",};
+   public static final String[] project_demo_help={"","","","","","","","","","","","","","","","","","","","",};
+   public static final String[] project_demo_keys={"emailAddress","entry.416579074","entry.1116281368","entry.240207302","entry.1297446229" ,"entry.524989447" ,"entry.982881845","entry.1146474304","entry.1217872144","","","","","","","","","","","",};
+   public static final String[] project_demo_types={"text","text","text","text","text","text","text","text","text","","","","","","","","","","","",};
+   public static final String project_demo_url="https://docs.google.com/forms/d/e/1FAIpQLSdfsCXTrJb3jHJZZx0dhkpmBZKcYGtfI_IAB5fbnyDFIbworg/formResponse";
+
+   public static final String vrmeet_title="VR MEET";
+   public final static String[] vrmeet_fields={"Email address *","Name *","Organization *","Have you ever built games or interactive stories or VR experiences? *","Describe some projects you have done.","Have you ever tried VR experiences? *","Which one describes you? *","Have you ever attended VR Meetup before? *","","","","","","","","","","","",""};
+   public final static String[] vrmeet_help={"","","","College/University/Company","","","","","","","","","","","","","","","",""};
+   public final static String[] vrmeet_keys={"emailAddress","entry.515580353","entry.752416173","entry.254294347","entry.1507747901","entry.1407822582","entry.137019083","entry.813138425","","","","","","","","","","","",""};
+   public final static String[] vrmeet_types={"text","text","text","drop","text","drop","drop","drop","","","","","","","","","","","",""};
+   public final static String vrmeet_url="https://docs.google.com/forms/d/e/1FAIpQLSfpR7zHMLkG5XIfTPSVG80omoAM_QXyCYjw93a-7SlvY_DHzQ/formResponse" ;
+
+   public static final String itquiz_title="IT Quiz";
+   public final static String[] itquiz_fields={"College's Name *","Address *","Faculty Staff *","Staff's E-mail address *","Team Name","Team A","Team B","","","","","","","","","","","","",""};
+   public final static String[] itquiz_help={
+           "","","(e.g Full name - phone number )","","","please provide your team member's name (e.g 1. Full Name [Team Leader] 2. Full Name 3. Full Name)","please provide your second team member's name if you are including. (e.g 1. Full Name [Team Leader] 2. Full Name 3. Full Name)","","","","","","","","","","","","",""};
+   public final static String[] itquiz_keys={"entry.1556369182","entry.1670698323","entry.588393791","entry.2109138769","entry.584460784","entry.1822441447","entry.1692082396","","","","","","","","","","","","",""};
+   public final static String[] itquiz_types={"text","text","text","text","text","text","text","","","","","","","","","","","","",""};
+   public final static String itquiz_url= "https://docs.google.com/forms/d/e/1FAIpQLScUoWH1QvRp5mShZPzxOsnjvJ6b-mEubq1PLFtSZsHRELVa8A/formResponse";
+
 
 //
 //    public final static String[] _fields={};

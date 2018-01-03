@@ -208,6 +208,31 @@ public class registration extends Fragment {
             }
         });
 
+        root.findViewById(R.id.btn_itquiz).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                bundle.putString("event", "itquiz");
+                Fragment fragment = new EventRegistration();
+                fragment.setArguments(bundle);
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.main_fragment, fragment);
+                ft.commit();
+            }
+        });
+
+        root.findViewById(R.id.btn_vrmeet).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                bundle.putString("event", "vrmeet");
+                Fragment fragment = new EventRegistration();
+                fragment.setArguments(bundle);
+                FragmentTransaction ft = getFragmentManager().beginTransaction();
+                ft.replace(R.id.main_fragment, fragment);
+                ft.commit();
+            }
+        });
         
         return root;
     }

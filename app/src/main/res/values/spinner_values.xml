@@ -144,4 +144,10 @@
         <item> Online Search</item>
     </string-array>
 
+    <string-array name="vrmeet">
+        <item>Developer</item>
+        <item>Artist</item>
+        <item>Gamer</item>
+    </string-array>
+
 </resources>

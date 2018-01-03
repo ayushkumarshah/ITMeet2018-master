@@ -58,8 +58,6 @@ public class EventRegistration extends Fragment {
 
     String[] value={"","","","","","","","","","","","","","","",""};
 
-    
-
     String name_x;
     String address_x;
     String phone_x;
@@ -69,8 +67,6 @@ public class EventRegistration extends Fragment {
     String inst_x;
     String lvl_x;
     String event_x;
-
-
 
     public EventRegistration() {
         // Required empty public constructor
@@ -210,7 +206,25 @@ public class EventRegistration extends Fragment {
                 keys=event_constants.project_demo_keys;
                 types=event_constants.project_demo_types;
                 url=event_constants.project_demo_url;
-                break;  
+                break;
+
+            case "itquiz":
+                title=event_constants.itquiz_title;
+                help=event_constants.itquiz_help;
+                fields=event_constants.itquiz_fields;
+                keys=event_constants.itquiz_keys;
+                types=event_constants.itquiz_types;
+                url=event_constants.itquiz_url;
+                break;
+
+            case "vrmeet":
+                title=event_constants.vrmeet_title;
+                help=event_constants.vrmeet_help;
+                fields=event_constants.vrmeet_fields;
+                keys=event_constants.vrmeet_keys;
+                types=event_constants.vrmeet_types;
+                url=event_constants.vrmeet_url;
+                break;
         }
 
         title_l.setText(title+" Registration");
@@ -420,6 +434,18 @@ public class EventRegistration extends Fragment {
                             break;
                         case "Location of payment":
                             spinnerInt(R.array.payment);
+                            break;
+                        case "Have you ever built games or interactive stories or VR experiences? *":
+                            spinnerInt(R.array.yn);
+                            break;
+                        case "Have you ever tried VR experiences? *":
+                            spinnerInt(R.array.yn);
+                            break;
+                        case "Have you ever attended VR Meetup before? *":
+                            spinnerInt(R.array.yn);
+                            break;
+                        case "Which one describes you? *":
+                            spinnerInt(R.array.vrmeet);
                             break;
                     }
                     spinner.setDropDownViewResource(android.R.layout.simple_spinner_item);

@@ -52,5 +52,8 @@
     <string name="admob_banner">ca-app-pub-9138801031375283/8781082813</string>
     <string name="profile_name">Profile</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

@@ -11,6 +11,7 @@ import android.view.View;
 
 import np.edu.ku.itmeet18.FirebaseAuthentication.Login;
 import np.edu.ku.itmeet18.FirebaseAuthentication.Profile;
+import np.edu.ku.itmeet18.bus_route.bus_route;
 
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ResideMenuItem itemShare;
     private ResideMenuItem itemVisit;
     private ResideMenuItem itemAbout;
-
+    private ResideMenuItem busInfo;
     /**
      * Called when the activity is first created.
      */
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         itemShare = new ResideMenuItem(this, R.drawable.icon_share, "Share");
         itemVisit = new ResideMenuItem(this, R.drawable.icon_visit, "Visit Us");
         itemAbout = new ResideMenuItem(this, R.drawable.icon_about, "About Us");
-
+        busInfo = new ResideMenuItem(this, R.drawable.icon_about, "Bus Route");
 
         itemHome.setOnClickListener(this);
         itemNews.setOnClickListener(this);
@@ -82,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         itemVisit.setOnClickListener(this);
         itemShare.setOnClickListener(this);
         itemAbout.setOnClickListener(this);
+        busInfo.setOnClickListener(this);
 
         resideMenu.addMenuItem(itemHome, ResideMenu.DIRECTION_LEFT);
         resideMenu.addMenuItem(itemNews, ResideMenu.DIRECTION_LEFT);
@@ -91,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resideMenu.addMenuItem(itemVisit, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemShare, ResideMenu.DIRECTION_RIGHT);
         resideMenu.addMenuItem(itemAbout, ResideMenu.DIRECTION_RIGHT);
+        resideMenu.addMenuItem(busInfo, ResideMenu.DIRECTION_LEFT);
 
         // You can disable a direction by setting ->
         // resideMenu.setSwipeDirectionDisable(ResideMenu.DIRECTION_RIGHT);
@@ -125,6 +128,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             changeFragment(new registration());
         }else if (view == itemProfile) {
             changeFragment(new Profile());
+        }else if (view == busInfo){
+            changeFragment(new bus_route());
         }else if (view == itemEvents){
             changeFragment(new EventFragment());
         }else if (view == itemShare){

@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         itemShare = new ResideMenuItem(this, R.drawable.icon_share, "Share");
         itemVisit = new ResideMenuItem(this, R.drawable.icon_visit, "Visit Us");
         itemAbout = new ResideMenuItem(this, R.drawable.icon_about, "About Us");
-        busInfo = new ResideMenuItem(this, R.drawable.icon_about, "Bus Route");
+        busInfo = new ResideMenuItem(this, R.drawable.bus, "Bus Route");
 
         itemHome.setOnClickListener(this);
         itemNews.setOnClickListener(this);

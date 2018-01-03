@@ -353,7 +353,7 @@ public class EventFragment extends Fragment implements View.OnClickListener {
     private void getData() {
 
         loading = ProgressDialog.show(context, "Please wait...", "Fetching...", false, false);
-
+        loading.setCanceledOnTouchOutside(true);
         String url = "http://itmeet.ku.edu.np/index.php?rest_route=%2Fwp%2Fv2%2Fevents&per_page=100";
         Log.e("url:", url);
 

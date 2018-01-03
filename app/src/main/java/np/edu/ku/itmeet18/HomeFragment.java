@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         View parentView = inflater.inflate(R.layout.home, container, false);
         context = parentView.getContext();
         activity = getActivity();
-        ImageButton verisk, yomari, neo, nta,gbd, sunway, doit,cynical, ekantipur, worldlink, ittn, ug, smartcell,leapfrog,logpoint,es,endeavor,cb, prime,vr,merojob,glam;
+        ImageButton verisk, yomari, neo, nta,gbd, sunway, doit,cynical, ekantipur, worldlink, ittn, ug, smartcell,leapfrog,logpoint,es,endeavor,cb, prime,vr,merojob,glam,sparrow, khalti;
         verisk = (ImageButton) parentView.findViewById(R.id.verisk);
         verisk.setOnClickListener(this);
         smartcell = (ImageButton) parentView.findViewById(R.id.smartcell);
@@ -77,6 +77,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         merojob = (ImageButton) parentView.findViewById(R.id.merojob);
         merojob.setOnClickListener(this);
+
+        sparrow = (ImageButton) parentView.findViewById(R.id.sparrow);
+        sparrow.setOnClickListener(this);
+        khalti = (ImageButton) parentView.findViewById(R.id.khalti);
+        khalti.setOnClickListener(this);
+
+
+
 
         mCustomPagerAdapter = new CustomPagerAdapter(container.getContext());
 
@@ -165,6 +173,14 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
             case R.id.merojob:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://merojob.com/")));
+                break;
+
+            case R.id.sparrow:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://sparrowsms.com/")));
+                break;
+
+            case R.id.khalti:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://khalti.com/")));
                 break;
         }
     }
